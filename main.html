@@ -17,13 +17,6 @@
       <!-- ☲☲☲☲ SMALL TOP BANNER ☲☲☲☲ -->
       <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
       <div class="header-nav-bx-utility-wrapper " id="banner" onscroll="bannerUnpinn()">
-        <!-- ☲☲☲☲ UNPINN BANNER ☲☲☲☲ -->
-        <script>
-          function bannerUnpinn(){
-            var banner = document.getElementById('banner');
-            banner.classList.toggle('unpinned');
-          }
-        </script>
         <div class="header-utility-navigation">
           <div class="header-utility-navigation_banner">
             <p>Free shipping on all orders!</p>
@@ -38,26 +31,7 @@
             <!-- ☲☲☲☲ DROPDOWN MENU IN BANNER ☲☲☲☲ -->
             <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
             <div class="dropdown-section" onclick="openDropdownBannerMenu()"><span>About</span><img src="source/images/arrow.png" alt="arrow" id="about-arrow">
-            <!-- ☲☲☲☲ OPEN + CLOSE BANNER MENU ☲☲☲☲ -->
-            <script>
-              function openDropdownBannerMenu(){
-                var about_arrow = document.getElementById('about-arrow');
-                var menu = document.getElementById('dropdownMenu');
-                about_arrow.classList.toggle('active')
-                if (menu.classList.contains('active')) {
-                  menu.classList.remove("active");
-                  setTimeout(() => {
-                      menu.classList.add("hidden");
-                  }, 150);
-                }else {
-                  menu.classList.remove("hidden");
-                  setTimeout(() =>{
-                    menu.classList.add("active");
 
-                  }, 150);
-                }
-              }
-            </script>
             <!-- ☲☲☲☲ DROPDOWN MENU ☲☲☲☲ -->
               <div class="utility-dropdown" id="dropdownMenu">
                 <!-- ☲☲☲☲ LINKS ☲☲☲☲ -->
@@ -99,7 +73,7 @@
             <!-- ☲☲☲☲ NAVIGATION LINKS ☲☲☲☲ -->
             <!-- ∾∾∾∾∾∾ SEATING ∾∾∾∾∾∾ -->
             <div class="navigation-position">
-              <button class="navigation-position-button" id="seating-button" onclick="rotateSeatingArrow(), openSeatingMenu()">
+              <button class="navigation-position-button" id="seating-button" onclick="rotateSeatingArrow(), openSeatingMenu(), chooseMenuFunction()">
                 <span>Seating</span><img src="source/images/arrow.png" alt="arrow" id="seating-arrow">
               </button>
               <!-- ☲☲☲☲ LINK CONTENT ☲☲☲☲ -->
@@ -187,58 +161,7 @@
                   </div>
                 </div>
               </div>
-              <!-- ☲☲☲☲ OPEN + CLOSE SEATING MENU ☲☲☲☲ -->
-              <script>
-                function rotateSeatingArrow(){
-                  var seating = document.getElementById("seating-arrow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  seating.classList.toggle("active");
-                }
-                function openSeatingMenu(){
-                  var seatingDropdown = document.getElementById("seating-dropdown");
-                  var shadow = document.getElementById("boxShadow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  if (seatingDropdown.classList.contains('active')) {
-                    shadow.classList.remove('active');
-                    seatingDropdown.classList.remove("active");
-                    setTimeout(() => {
-                        seatingDropdown.classList.add("hidden");
 
-                    }, 200);
-                    setTimeout(() => {
-                      shadow.classList.add('hidden');
-                    }, 000)
-                  }else {
-                    seatingDropdown.classList.remove("hidden");
-                    shadow.classList.remove('hidden');
-                    setTimeout(() => {
-                      seatingDropdown.classList.add("active");
-
-                    }, 150);
-                    setTimeout(() => {
-                      shadow.classList.add('active');
-                    }, 100);
-                  }
-                }
-                // ☲☲☲☲ CLOSE ALL DROPDOWNS ☲☲☲☲
-                var menu = document.querySelector('.header-navigation-content');
-                // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                menu.addEventListener("mouseleave", leaving, false);
-                function leaving() {
-                  // ⇋⇋⇋⇋⇋ ROTATE ARROW ⇋⇋⇋⇋⇋
-                  var seating = document.getElementById("seating-arrow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  seating.classList.remove("active");
-
-                  // ⇋⇋⇋⇋⇋ CLOSE MENU ⇋⇋⇋⇋⇋
-                  var seatingDropdown = document.getElementById("seating-dropdown");
-                  var shadow = document.getElementById("boxShadow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  shadow.classList.remove('active');
-                  seatingDropdown.classList.remove("active");
-
-                }
-              </script>
 
 
 
@@ -246,7 +169,7 @@
             <!-- ∾∾∾∾∾∾ LIVING ROOM ∾∾∾∾∾∾ -->
 
             <div class="navigation-position">
-              <button class="navigation-position-button" id="livingroom-button" onclick="rotateLivingroomArrow(), openLivingroomMenu()">
+              <button class="navigation-position-button" id="livingroom-button" onclick="rotateLivingroomArrow(), openLivingroomMenu(), chooseMenuFunction()">
                 <span>Living Room</span><img src="source/images/arrow.png" alt="arrow" id="livingroom-arrow">
               </button>
               <!-- ☲☲☲☲ LINK CONTENT ☲☲☲☲ -->
@@ -368,59 +291,6 @@
                   </div>
                 </div>
               </div>
-              <!-- ☲☲☲☲ OPEN + CLOSE LIVINGROOM MENU ☲☲☲☲ -->
-              <script>
-                function rotateLivingroomArrow(){
-                  var livingroom = document.getElementById("livingroom-arrow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  livingroom.classList.toggle("active");
-                }
-                function openLivingroomMenu(){
-                  var livingroomDropdown = document.getElementById("livingroom-dropdown");
-                  var shadow = document.getElementById("boxShadow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  if (livingroomDropdown.classList.contains('active')) {
-                    shadow.classList.remove('active');
-                    livingroomDropdown.classList.remove("active");
-                    setTimeout(() => {
-                        livingroomDropdown.classList.add("hidden");
-
-                    }, 200);
-                    setTimeout(() => {
-                      shadow.classList.add('hidden');
-                    }, 000)
-                  }else {
-                    livingroomDropdown.classList.remove("hidden");
-                    shadow.classList.remove('hidden');
-                    setTimeout(() => {
-                      livingroomDropdown.classList.add("active");
-
-                    }, 150);
-                    setTimeout(() => {
-                      shadow.classList.add('active');
-                    }, 100);
-                  }
-                }
-                // ☲☲☲☲ CLOSE ALL DROPDOWNS ☲☲☲☲
-                var menu = document.querySelector('.header-navigation-content');
-                // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                menu.addEventListener("mouseleave", leaving, false);
-                function leaving() {
-                  // ⇋⇋⇋⇋⇋ ROTATE ARROW ⇋⇋⇋⇋⇋
-                  var livingroom = document.getElementById("livingroom-arrow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  livingroom.classList.remove("active");
-
-                  // ⇋⇋⇋⇋⇋ CLOSE MENU ⇋⇋⇋⇋⇋
-                  var livingroomDropdown = document.getElementById("livingroom-dropdown");
-                  var shadow = document.getElementById("boxShadow");
-                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-                  shadow.classList.remove('active');
-                  livingroomDropdown.classList.remove("active");
-
-                }
-              </script>
-
 
 
             </div>
@@ -432,3 +302,161 @@
     </header>
   </body>
 </html>
+<!-- ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ -->
+<!-- ⇋⇋⇋⇋⇋ JavaScript ⇋⇋⇋⇋⇋ -->
+<!-- ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ -->
+<script>
+  // ☲☲☲☲ UNPINN BANNER ☲☲☲☲
+  function bannerUnpinn(){
+    var banner = document.getElementById('banner');
+    banner.classList.toggle('unpinned');
+  }
+// ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+// ☲☲☲☲ OPEN + CLOSE BANNER MENU ☲☲☲☲
+  function openDropdownBannerMenu(){
+    var about_arrow = document.getElementById('about-arrow');
+    var menu = document.getElementById('dropdownMenu');
+    about_arrow.classList.toggle('active')
+    if (menu.classList.contains('active')) {
+      menu.classList.remove("active");
+      setTimeout(() => {
+          menu.classList.add("hidden");
+      }, 150);
+    }else {
+      menu.classList.remove("hidden");
+      setTimeout(() =>{
+        menu.classList.add("active");
+
+      }, 150);
+    }
+  }
+// ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+// ☲☲☲☲ OPEN + CLOSE SEATING MENU ☲☲☲☲
+  function rotateSeatingArrow(){
+    var seatingArrow = document.getElementById("seating-arrow");
+    // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+    setTimeout(() => {
+      seatingArrow.classList.toggle("active");
+
+    },010)
+  }
+  function openSeatingMenu(){
+    var seatingDropdown = document.getElementById("seating-dropdown");
+    var shadow = document.getElementById("boxShadow");
+    // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+    if (seatingDropdown.classList.contains('active')) {
+      shadow.classList.remove('active');
+      seatingDropdown.classList.remove("active");
+      setTimeout(() => {
+          seatingDropdown.classList.add("hidden");
+
+      }, 200);
+      setTimeout(() => {
+        shadow.classList.add('hidden');
+      }, 000)
+    }else {
+      seatingDropdown.classList.remove("hidden");
+      shadow.classList.remove('hidden');
+      setTimeout(() => {
+        seatingDropdown.classList.add("active");
+
+      }, 150);
+      setTimeout(() => {
+        shadow.classList.add('active');
+      }, 100);
+    }
+  }
+// ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+// ☲☲☲☲ OPEN + CLOSE LIVINGROOM MENU ☲☲☲☲
+
+  function rotateLivingroomArrow(){
+    var livingroomArrow = document.getElementById("livingroom-arrow");
+    // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+    setTimeout(() => {
+      livingroomArrow.classList.toggle("active");
+
+    }, 010)
+  }
+  function openLivingroomMenu(){
+    var livingroomDropdown = document.getElementById("livingroom-dropdown");
+    var shadow = document.getElementById("boxShadow");
+    // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+    if (livingroomDropdown.classList.contains('active')) {
+      shadow.classList.remove('active');
+      livingroomDropdown.classList.remove("active");
+      setTimeout(() => {
+          livingroomDropdown.classList.add("hidden");
+
+      }, 200);
+      setTimeout(() => {
+        shadow.classList.add('hidden');
+      }, 000)
+    }else {
+      livingroomDropdown.classList.remove("hidden");
+      shadow.classList.remove('hidden');
+      setTimeout(() => {
+        livingroomDropdown.classList.add("active");
+
+      }, 150);
+      setTimeout(() => {
+        shadow.classList.add('active');
+      }, 100);
+    }
+  }
+
+// ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+
+  // ☲☲☲☲ CLOSE ALL DROPDOWNS ☲☲☲☲
+  var menu = document.querySelector('.header-navigation-content');
+  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+  menu.addEventListener("mouseleave", leaving, false);
+  function leaving() {
+    // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ ROTATE ARROWS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+    var livingroomArrow = document.getElementById("livingroom-arrow");
+    var seatingArrow = document.getElementById("seating-arrow");
+
+    // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+    livingroomArrow.classList.remove("active");
+    seatingArrow.classList.remove("active");
+
+    // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ CLOSE MENUS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+    var livingroomDropdown = document.getElementById("livingroom-dropdown");
+    var seatingDropdown = document.getElementById("seating-dropdown");
+
+
+    var shadow = document.getElementById("boxShadow");
+    // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+    livingroomDropdown.classList.remove("active");
+    seatingDropdown.classList.remove("active");
+
+    shadow.classList.remove('active');
+
+  }
+// ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+
+  // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ CHOOSE FUNCTION FOR CLOSE/OPEN OTHER DROPDOWNS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+  function chooseMenuFunction(){
+    var seatingArrow = document.getElementById("seating-arrow");
+    var livingroomArrow = document.getElementById("livingroom-arrow");
+
+    var seatingDropdown = document.getElementById("seating-dropdown");
+    var livingroomDropdown = document.getElementById("livingroom-dropdown");
+
+    var active = "active";
+    // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+    for ( active in seatingDropdown.classList || livingroomDropdown.classList) {
+      console.log("class active contains");
+      // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ CLOSE MENUS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+      livingroomDropdown.classList.remove("active");
+      seatingDropdown.classList.remove("active");
+      break;
+    }
+    for ( active in seatingArrow.classList || livingroomArrow.classList) {
+      console.log("arrow class active contains");
+      // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ ROTATE ARROWS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+      livingroomArrow.classList.remove("active");
+      seatingArrow.classList.remove("active");
+      break;
+    }
+  }
+</script>
