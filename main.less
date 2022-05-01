@@ -245,7 +245,9 @@ body{
                 // background: #2196f3;
                 background-color: #ffffff;
                 // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-                width: 85rem;
+                position: relative;
+                width: 79rem;
+                left: 8rem;
                 height: 325.7px;
                 margin: 0 7.98rem;
                 padding: 1.4rem 0;
@@ -343,23 +345,24 @@ body{
               }
 
             }
-            .boxShadow{
-              position: fixed;
-              display: none;
-              left: 0;
-              top: 6.5rem;
-              width: 100vw;
-              height: calc(100vh - 6.5rem);
-              background-color: rgba(140, 139, 139, 0.53);
-              &.active{
-                display: block;
-              }
-              &.hidden{
-                display: none;
-              }
-            }
+            
           }
         }
+      }
+    }
+    .boxShadow{
+      position: fixed;
+      display: none;
+      left: 0;
+      top: 6.5rem;
+      width: 100vw;
+      height: calc(100vh - 6.5rem);
+      background-color: rgba(140, 139, 139, 0.53);
+      &.active{
+        display: block;
+      }
+      &.hidden{
+        display: none;
       }
     }
   }

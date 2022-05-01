@@ -309,7 +309,9 @@ body .header-navigation .header-navigation-content .header-menu-desktop .navigat
 }
 body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content {
   background-color: #ffffff;
-  width: 85rem;
+  position: relative;
+  width: 79rem;
+  left: 8rem;
   height: 325.7px;
   margin: 0 7.98rem;
   padding: 1.4rem 0;
@@ -465,7 +467,7 @@ body .header-navigation .header-navigation-content .header-menu-desktop .navigat
 body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image#image2 .images_point-title {
   display: none;
 }
-body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .boxShadow {
+body .header-navigation .boxShadow {
   position: fixed;
   display: none;
   left: 0;
@@ -474,9 +476,9 @@ body .header-navigation .header-navigation-content .header-menu-desktop .navigat
   height: calc(93.5vh);
   background-color: rgba(140, 139, 139, 0.53);
 }
-body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .boxShadow.active {
+body .header-navigation .boxShadow.active {
   display: block;
 }
-body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .boxShadow.hidden {
+body .header-navigation .boxShadow.hidden {
   display: none;
 }

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="/css/master.css">
+    <!-- ☲☲☲☲ WEBSITE ICON ☲☲☲☲ -->
+    <link rel="icon" type="image/png" sizes="720x720" href="source/image/birdPFP.png">
     <title>Burrow</title>
   </head>
   <body>
@@ -95,12 +97,13 @@
           </div>
           <div class="navigation">
             <!-- ☲☲☲☲ NAVIGATION LINKS ☲☲☲☲ -->
+            <!-- ∾∾∾∾∾∾ SEATING ∾∾∾∾∾∾ -->
             <div class="navigation-position">
               <button class="navigation-position-button" id="seating-button" onclick="rotateSeatingArrow(), openSeatingMenu()">
                 <span>Seating</span><img src="source/images/arrow.png" alt="arrow" id="seating-arrow">
               </button>
               <!-- ☲☲☲☲ LINK CONTENT ☲☲☲☲ -->
-              <div class="navigation-position-drawer active" id="seating-dropdown">
+              <div class="navigation-position-drawer" id="seating-dropdown">
                 <div class="navigation-position-drawer_content">
                   <div class="navigation-dropdown">
                     <button class="links-section-item">
@@ -188,13 +191,13 @@
               <script>
                 function rotateSeatingArrow(){
                   var seating = document.getElementById("seating-arrow");
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
                   seating.classList.toggle("active");
-
                 }
                 function openSeatingMenu(){
                   var seatingDropdown = document.getElementById("seating-dropdown");
                   var shadow = document.getElementById("boxShadow");
-
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
                   if (seatingDropdown.classList.contains('active')) {
                     shadow.classList.remove('active');
                     seatingDropdown.classList.remove("active");
@@ -217,14 +220,215 @@
                     }, 100);
                   }
                 }
+                // ☲☲☲☲ CLOSE ALL DROPDOWNS ☲☲☲☲
+                var menu = document.querySelector('.header-navigation-content');
+                // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                menu.addEventListener("mouseleave", leaving, false);
+                function leaving() {
+                  // ⇋⇋⇋⇋⇋ ROTATE ARROW ⇋⇋⇋⇋⇋
+                  var seating = document.getElementById("seating-arrow");
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                  seating.classList.remove("active");
+
+                  // ⇋⇋⇋⇋⇋ CLOSE MENU ⇋⇋⇋⇋⇋
+                  var seatingDropdown = document.getElementById("seating-dropdown");
+                  var shadow = document.getElementById("boxShadow");
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                  shadow.classList.remove('active');
+                  seatingDropdown.classList.remove("active");
+
+                }
               </script>
-              <!-- ☲☲☲☲ SHADOW ☲☲☲☲ -->
-              <div class="boxShadow" id="boxShadow" onmouseover="rotateSeatingArrow(), openSeatingMenu()"></div>
+
+
+
+            </div>
+            <!-- ∾∾∾∾∾∾ LIVING ROOM ∾∾∾∾∾∾ -->
+
+            <div class="navigation-position">
+              <button class="navigation-position-button" id="livingroom-button" onclick="rotateLivingroomArrow(), openLivingroomMenu()">
+                <span>Living Room</span><img src="source/images/arrow.png" alt="arrow" id="livingroom-arrow">
+              </button>
+              <!-- ☲☲☲☲ LINK CONTENT ☲☲☲☲ -->
+              <div class="navigation-position-drawer" id="livingroom-dropdown">
+                <div class="navigation-position-drawer_content">
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Seating</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Sectionals</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Sofas & Loveseats</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Chair & Ottomans</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Sleeper</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Fabric Seating</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Leather Seating</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Velvet Seating</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">Seating Accessories</a>
+                    </div>
+                  </div>
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Tables, Carts & Benches</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Coffee Tables</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Side Tables</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Bar Carts</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Benches</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">All Tables & Carts</a>
+                    </div>
+                  </div>
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Sheleves & Storage</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Wall Shelves</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Credenzas & Media Storage</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Bar Carts</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Storage Benches</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Trays</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">All Shelves & Storage</a>
+                    </div>
+                  </div>
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Accessories</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Seating Accessories</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Throw Pillows</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Throw Blankets</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Pillow & Blanket Sets</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Trays</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Lighting</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Outlet</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">All Accessories</a>
+                    </div>
+                  </div>
+                  <!-- ☲☲☲☲ IMAGES ☲☲☲☲ -->
+                  <div class="images">
+                    <a class="image" href="#" id="image1">
+                      <div class="images_point-title">
+                        <p>Featured</p>
+                      </div>
+                      <img src="source/images/Best-Seller-Nomad-Ratio.png" alt="sofa fabric">
+                      <div class="images_point-description">
+                        <p>Customer Favorites</p>
+                        <span>SHOP NOW</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- ☲☲☲☲ OPEN + CLOSE LIVINGROOM MENU ☲☲☲☲ -->
+              <script>
+                function rotateLivingroomArrow(){
+                  var livingroom = document.getElementById("livingroom-arrow");
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                  livingroom.classList.toggle("active");
+                }
+                function openLivingroomMenu(){
+                  var livingroomDropdown = document.getElementById("livingroom-dropdown");
+                  var shadow = document.getElementById("boxShadow");
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                  if (livingroomDropdown.classList.contains('active')) {
+                    shadow.classList.remove('active');
+                    livingroomDropdown.classList.remove("active");
+                    setTimeout(() => {
+                        livingroomDropdown.classList.add("hidden");
+
+                    }, 200);
+                    setTimeout(() => {
+                      shadow.classList.add('hidden');
+                    }, 000)
+                  }else {
+                    livingroomDropdown.classList.remove("hidden");
+                    shadow.classList.remove('hidden');
+                    setTimeout(() => {
+                      livingroomDropdown.classList.add("active");
+
+                    }, 150);
+                    setTimeout(() => {
+                      shadow.classList.add('active');
+                    }, 100);
+                  }
+                }
+                // ☲☲☲☲ CLOSE ALL DROPDOWNS ☲☲☲☲
+                var menu = document.querySelector('.header-navigation-content');
+                // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                menu.addEventListener("mouseleave", leaving, false);
+                function leaving() {
+                  // ⇋⇋⇋⇋⇋ ROTATE ARROW ⇋⇋⇋⇋⇋
+                  var livingroom = document.getElementById("livingroom-arrow");
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                  livingroom.classList.remove("active");
+
+                  // ⇋⇋⇋⇋⇋ CLOSE MENU ⇋⇋⇋⇋⇋
+                  var livingroomDropdown = document.getElementById("livingroom-dropdown");
+                  var shadow = document.getElementById("boxShadow");
+                  // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+                  shadow.classList.remove('active');
+                  livingroomDropdown.classList.remove("active");
+
+                }
+              </script>
+
+
 
             </div>
           </div>
         </div>
       </nav>
+      <!-- ☲☲☲☲ NAVIGATION SHADOW ☲☲☲☲ -->
+      <div class="boxShadow" id="boxShadow"></div>
     </header>
   </body>
 </html>
