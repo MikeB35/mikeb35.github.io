@@ -4,7 +4,7 @@
     
   </a>
   <p align="center">
-   <img width="150" height="150" src="birdPFP.png" alt="Logo">
+   <img width="150" height="150" src="source/images/birdPFP.png" alt="Logo">
   </p>
   <h1 align="center"><b>testWeb</b></h1>
   <p align="center">
