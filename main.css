@@ -276,6 +276,15 @@ body .header-navigation .header-navigation-content .header-menu-desktop .navigat
   display: -ms-flexbox;
   display: flex;
 }
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-button {
+  padding: 1.5rem 0.5rem;
+}
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-button span {
+  font-size: 1rem;
+}
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-button span.ship {
+  color: #9e7566 ;
+}
 body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-button img {
   height: 15px;
   width: 15px;
@@ -464,11 +473,18 @@ body .header-navigation .header-navigation-content .header-menu-desktop .navigat
 body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image .images_point-description span:hover {
   text-decoration: none;
 }
-body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image#image2 {
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image .images_point-description span.inspiration {
+  margin-top: 1rem;
+}
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image.image2 {
   margin-top: 52px;
 }
-body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image#image2 .images_point-title {
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image.image2 .images_point-title {
   display: none;
+}
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image.image3 img {
+  height: 12.5rem;
+  width: 18rem;
 }
 body .header-navigation .boxShadow {
   position: fixed;
