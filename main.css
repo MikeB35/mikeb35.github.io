@@ -377,6 +377,9 @@ body .header-navigation .header-navigation-content .header-menu-desktop .navigat
   padding: .5rem 0;
   font-size: 0.8rem;
 }
+body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .navigation-dropdown .navigation-dropdown_content a:hover {
+  color: #795548;
+}
 body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images {
   width: auto;
   display: -webkit-box;

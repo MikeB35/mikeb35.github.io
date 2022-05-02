@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="/css/master.css">
     <!-- ☲☲☲☲ WEBSITE ICON ☲☲☲☲ -->
-    <link rel="icon" type="image/png" sizes="720x720" href="source/image/birdPFP.png">
+    <link rel="icon" type="image/x-icon" href="source/images/birdPFP2.ico">
     <title>Burrow</title>
   </head>
   <body>
@@ -167,7 +167,6 @@
 
             </div>
             <!-- ∾∾∾∾∾∾ LIVING ROOM ∾∾∾∾∾∾ -->
-
             <div class="navigation-position">
               <button class="navigation-position-button" id="livingroom-button" onclick="rotateLivingroomArrow(), openLivingroomMenu(), chooseMenuFunction()">
                 <span>Living Room</span><img src="source/images/arrow.png" alt="arrow" id="livingroom-arrow">
@@ -294,6 +293,115 @@
 
 
             </div>
+            <!-- ∾∾∾∾∾∾ BEDROOM ∾∾∾∾∾∾ -->
+            <div class="navigation-position">
+              <button class="navigation-position-button" id="bedroom-button" onclick="rotateBedroomArrow(), openBedroomMenu(), chooseMenuFunction()">
+                <span>Bedroom</span><img src="source/images/arrow.png" alt="arrow" id="bedroom-arrow">
+              </button>
+              <!-- ☲☲☲☲ LINK CONTENT ☲☲☲☲ -->
+              <div class="navigation-position-drawer" id="bedroom-dropdown">
+                <div class="navigation-position-drawer_content">
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Beds</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Circa Wood Bed</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Circa Upholstered Bed</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">All Beds</a>
+                    </div>
+                  </div>
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Mattresses</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Lyric Foam Mattress</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Lyric Hybrid Mattress</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Mattress Protector</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">Compare Mattresses</a>
+                    </div>
+                  </div>
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Storage</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Dressers</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Nightstands</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Wall Shelves</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Benches</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">All Bedroom Storage</a>
+                    </div>
+                  </div>
+                  <div class="navigation-dropdown">
+                    <button class="links-section-item">
+                      <span class="header">Bedding & Accessories</span>
+                    </button>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">4-Piece Sheet Set</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">3-Piece Sheet Set</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Duvet Cover</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Duvet Insert</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Pillowcase Set</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Pillow Insert</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Lighting</a>
+                    </div>
+                    <div class="navigation-dropdown_content">
+                      <a href="#">Throw Pillows & Blankets</a>
+                    </div>
+                    <div class="navigation-dropdown_content special">
+                      <a href="#">All Bedding</a>
+                    </div>
+                  </div>
+                  <!-- ☲☲☲☲ IMAGES ☲☲☲☲ -->
+                  <div class="images">
+                    <a class="image" href="#" id="image1">
+                      <div class="images_point-title">
+                        <p>Featured</p>
+                      </div>
+                      <img src="source/images/Bedroom-Ratio.png" alt="sofa fabric">
+                      <div class="images_point-description">
+                        <p>The Better Bedroom</p>
+                        <span>LEARN MORE</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
           </div>
         </div>
       </nav>
@@ -403,7 +511,43 @@
       }, 100);
     }
   }
+  // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
+  // ☲☲☲☲ OPEN + CLOSE BEDROOM MENU ☲☲☲☲
 
+    function rotateBedroomArrow(){
+      var bedroomArrow = document.getElementById("bedroom-arrow");
+      // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+      setTimeout(() => {
+        bedroomArrow.classList.toggle("active");
+
+      }, 010)
+    }
+    function openBedroomMenu(){
+      var bedroomDropdown = document.getElementById("bedroom-dropdown");
+      var shadow = document.getElementById("boxShadow");
+      // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
+      if (bedroomDropdown.classList.contains('active')) {
+        shadow.classList.remove('active');
+        bedroomDropdown.classList.remove("active");
+        setTimeout(() => {
+            bedroomDropdown.classList.add("hidden");
+
+        }, 200);
+        setTimeout(() => {
+          shadow.classList.add('hidden');
+        }, 000)
+      }else {
+        bedroomDropdown.classList.remove("hidden");
+        shadow.classList.remove('hidden');
+        setTimeout(() => {
+          bedroomDropdown.classList.add("active");
+
+        }, 150);
+        setTimeout(() => {
+          shadow.classList.add('active');
+        }, 100);
+      }
+    }
 // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
 
   // ☲☲☲☲ CLOSE ALL DROPDOWNS ☲☲☲☲
@@ -414,20 +558,24 @@
     // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ ROTATE ARROWS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
     var livingroomArrow = document.getElementById("livingroom-arrow");
     var seatingArrow = document.getElementById("seating-arrow");
+    var bedroomArrow = document.getElementById("bedroom-arrow");
 
     // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-    livingroomArrow.classList.remove("active");
     seatingArrow.classList.remove("active");
+    livingroomArrow.classList.remove("active");
+    bedroomArrow.classList.remove("active");
 
     // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ CLOSE MENUS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
-    var livingroomDropdown = document.getElementById("livingroom-dropdown");
     var seatingDropdown = document.getElementById("seating-dropdown");
+    var livingroomDropdown = document.getElementById("livingroom-dropdown");
+    var bedroomDropdown = document.getElementById("bedroom-dropdown");
 
 
     var shadow = document.getElementById("boxShadow");
     // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-    livingroomDropdown.classList.remove("active");
     seatingDropdown.classList.remove("active");
+    livingroomDropdown.classList.remove("active");
+    bedroomDropdown.classList.remove("active");
 
     shadow.classList.remove('active');
 
@@ -438,24 +586,30 @@
   function chooseMenuFunction(){
     var seatingArrow = document.getElementById("seating-arrow");
     var livingroomArrow = document.getElementById("livingroom-arrow");
+    var bedroomArrow = document.getElementById("bedroom-arrow");
 
     var seatingDropdown = document.getElementById("seating-dropdown");
     var livingroomDropdown = document.getElementById("livingroom-dropdown");
+    var bedroomDropdown = document.getElementById("bedroom-dropdown");
 
     var active = "active";
     // ⇋⇋⇋⇋⇋ FUNCTION ⇋⇋⇋⇋⇋
-    for ( active in seatingDropdown.classList || livingroomDropdown.classList) {
+    for ( active in seatingDropdown.classList || livingroomDropdown.classList || bedroomDropdown.classList) {
       console.log("class active contains");
       // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ CLOSE MENUS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
-      livingroomDropdown.classList.remove("active");
       seatingDropdown.classList.remove("active");
+      livingroomDropdown.classList.remove("active");
+      bedroomDropdown.classList.remove("active");
+
       break;
     }
-    for ( active in seatingArrow.classList || livingroomArrow.classList) {
+    for ( active in seatingArrow.classList || livingroomArrow.classList || bedroomArrow.classList) {
       console.log("arrow class active contains");
       // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋ ROTATE ARROWS ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
-      livingroomArrow.classList.remove("active");
       seatingArrow.classList.remove("active");
+      livingroomArrow.classList.remove("active");
+      bedroomArrow.classList.remove("active");
+
       break;
     }
   }
