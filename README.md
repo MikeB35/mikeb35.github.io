@@ -44,7 +44,7 @@ Clone the project
 
 # Screenshots
 
-![App Screenshot](screenshots/screecnshot1.jpg)
+<img width="1920" height="1080" src="screenshots/screenshot1.jpg" alt="screenshot">
 
 ## Authors
 
