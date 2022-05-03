@@ -43,14 +43,13 @@ Stáhněte projekt
 >   Spusťte index.html soubor
 
 # Proces tvorby
-1. Základ
-  1. Vytvářím nový soubor .html a .less(přehlednější pro programátora a rychleji nastavitelný)
-  2. Pomoci aplikaci "Koala" dále budu konvertovat soubor .less do .css(základní soubor pro styly)
-  3. Dívám se na ukázku, stahuju potřebná písma, obrázky atd.
-  4. Předem prohlížím a zkoumám/vymýšlím strukturu webu
-2. Tvorba
-  1. Píšu kód html, css a pořebný JavaScript
-  2. Během tvorby webové stránky ukládam backupy(předchozí verze kódu, kterou se dá, po případě poškození lokálneho kódu, stáhnout a tím se vrátit o krok zpět) na github
+Základ
+1. Vytvářím nový soubor .html a .less(přehlednější pro programátora a rychleji nastavitelný)
+2. Pomoci aplikaci "Koala" dále budu konvertovat soubor .less do .css(základní soubor pro styly)
+3. Dívám se na ukázku, stahuju potřebná písma, obrázky atd.
+4. Předem prohlížím a zkoumám/vymýšlím strukturu webu
+5. Píšu kód html, css a pořebný JavaScript
+6. Během tvorby webové stránky ukládam backupy(předchozí verze kódu, kterou se dá, po případě poškození lokálneho kódu, stáhnout a tím se vrátit o krok zpět) na github
 
 # Aplikace
 Pro práci jsem použil tyto aplikace
