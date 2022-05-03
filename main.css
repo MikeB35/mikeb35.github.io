@@ -255,7 +255,7 @@ body .header-navigation .header-navigation-content .header-menu-desktop {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 98%;
   z-index: 11;
   height: 4.5rem;
   padding: 0 1rem;
@@ -485,6 +485,19 @@ body .header-navigation .header-navigation-content .header-menu-desktop .navigat
 body .header-navigation .header-navigation-content .header-menu-desktop .navigation .navigation-position .navigation-position-drawer .navigation-position-drawer_content .images .image.image3 img {
   height: 12.5rem;
   width: 18rem;
+}
+body .header-navigation .header-navigation-content .accounts-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .header-navigation .header-navigation-content .accounts-section a {
+  margin: 0 1rem;
+  padding: 1.7rem 0;
 }
 body .header-navigation .boxShadow {
   position: fixed;
