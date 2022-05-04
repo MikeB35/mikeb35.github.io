@@ -403,4 +403,74 @@ body{
       }
     }
   }
+  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+  // ☲☲☲☲ MAIN PAGE ☲☲☲☲
+  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+  .main-page{
+    .carousell{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      // align-items: center;
+      .carousell-images{
+        width: 100%;
+        .carousel-element{
+          width: 100%;
+          height: 30vh;
+          overflow: hidden;
+          img{
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .slide{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .btm-sliders{
+          display: flex;
+          flex-direction: row;
+          position: absolute;
+          bottom: 800px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 300px;
+          z-index: 1000;
+          span{
+            display: block;
+            height: 15px;
+            width: 50px;
+            border: solid 2px #ff9800;
+            margin: 0 3px;
+            cursor: pointer;
+            &:hover{
+              background-color: #ff9800;
+            }
+
+          }
+
+        }
+      }
+
+      // .carousel-inner{
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: space-around;
+      //   .carousel-item{
+      //     // all: unset;
+      //     position: relative;
+      //     height: 30vw;
+      //     background-color: #ebf80b;
+      //     margin: 0 10rem;
+      //     width: 80vw;
+      //     img{
+      //       width: 80vw;
+      //       margin: 0 10rem;
+      //
+      //     }
+      //   }
+      // }
+    }
+  }
 }
