@@ -395,9 +395,9 @@ body .main-page .carousell {
 }
 body .main-page .carousell .carousell-images {
   width: 100%;
+  display: flex;
 }
 body .main-page .carousell .carousell-images .carousel-element {
-  width: 100%;
   height: 30vh;
   overflow: hidden;
 }
@@ -405,22 +405,23 @@ body .main-page .carousell .carousell-images .carousel-element img {
   height: 100%;
   width: 100%;
 }
-body .main-page .carousell .carousell-images .slide {
+body .main-page .carousell .slide {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-body .main-page .carousell .carousell-images .btm-sliders {
+body .main-page .carousell .btm-sliders {
   display: flex;
   flex-direction: row;
   position: absolute;
   bottom: 800px;
   left: 50%;
   transform: translateX(-50%);
+  height: 15px;
   width: 300px;
   z-index: 1000;
 }
-body .main-page .carousell .carousell-images .btm-sliders span {
+body .main-page .carousell .btm-sliders span {
   display: block;
   height: 15px;
   width: 50px;
@@ -428,6 +429,6 @@ body .main-page .carousell .carousell-images .btm-sliders span {
   margin: 0 3px;
   cursor: pointer;
 }
-body .main-page .carousell .carousell-images .btm-sliders span:hover {
+body .main-page .carousell .btm-sliders span:hover {
   background-color: #ff9800;
 }
