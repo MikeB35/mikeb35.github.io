@@ -407,7 +407,42 @@ body{
   // ☲☲☲☲ MAIN PAGE ☲☲☲☲
   // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
   .main-page{
+    width: 100%;
+    .swiper{
+      width: 100%;
+      height: 500px;
+      .swiper-wrapper{
+        // padding-left: 30rem;
+        .swiper-slide{
+          background-color: #ffc107;
+          border: solid #2196f3 3px;
+          &#slide1{
+            background-image: url("source/images/Nav-Shop-The-Look-Field-Ratio.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+      .swiper-pagination-bullet-active{
+        background-color: #f44336;
+
+      }
+      .swiper-button-prev{
+        color: #f44336;
+      }
+      .swiper-button-next{
+        color: #f44336;
+      }
+    }
+
+
+
+
+
     .carousell{
+      position: relative;
+      top: 10rem;
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -416,7 +451,11 @@ body{
         width: 100%;
         display: flex;
         .carousel-element{
-          // width: 100%;
+          background-color: #ffc107;
+          border: solid #2196f3 3px;
+          margin-right: 5rem;
+          max-width: 100%;
+          min-width: 30%;
           height: 30vh;
           overflow: hidden;
           img{
@@ -430,12 +469,19 @@ body{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
+        &.left{
+          transform: rotate(180deg) translateY(50%);
+        }
+        &.right{
+          right: 0;
+        }
       }
       .btm-sliders{
         display: flex;
         flex-direction: row;
         position: absolute;
-        bottom: 800px;
+        top: 100px;
         left: 50%;
         transform: translateX(-50%);
         height: 15px;
