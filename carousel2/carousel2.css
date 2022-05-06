@@ -1,0 +1,103 @@
+.carousel2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #f7eee3;
+  padding: 5rem 0;
+}
+.carousel2 .swiper {
+  max-width: 45rem;
+  min-width: 25rem;
+  height: 35rem;
+}
+.carousel2 .swiper .swiper-wrapper .swiper-slide {
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel2 .swiper .swiper-wrapper .swiper-slide#slide1 {
+  background-image: url("1.png");
+}
+.carousel2 .swiper .swiper-wrapper .swiper-slide#slide2 {
+  background-image: url("2.png");
+}
+.carousel2 .swiper .swiper-wrapper .swiper-slide#slide3 {
+  background-image: url("3.png");
+}
+.carousel2 .swiper .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
+.carousel2 .swiper .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+.carousel2 .swiper .swiper-button-prev {
+  color: #ffffff;
+}
+.carousel2 .swiper .swiper-button-next {
+  color: #ffffff;
+}
+.carousel2 .swiper.swiper2 .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel2 .swiper.swiper2 .swiper-slide#slide1 {
+  background: none;
+}
+.carousel2 .swiper.swiper2 .swiper-slide#slide2 {
+  background: none;
+}
+.carousel2 .swiper.swiper2 .swiper-slide#slide3 {
+  background: none;
+}
+.carousel2 .swiper .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #9e9e9e;
+}
+.carousel2 .swiper .swiper-pagination-bullet-active {
+  background-color: #2d2d2d;
+}
+@media screen and (min-width: 100px) {
+  .d-xs-none {
+    display: none!important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .d-xs-none {
+    display: block!important;
+  }
+}
