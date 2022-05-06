@@ -634,9 +634,21 @@
           <div class="swiper-slide" id="slide1">Slide 1</div>
           <div class="swiper-slide" id="slide2">Slide 2</div>
           <div class="swiper-slide" id="slide3">Slide 3</div>
+
+          <div class="swiper-slide" id="slide4">Slide 4</div>
+          <div class="swiper-slide" id="slide5">Slide 5</div>
+          <div class="swiper-slide" id="slide6">Slide 6</div>
+
+          <div class="swiper-slide" id="slide7">Slide 7</div>
+          <div class="swiper-slide" id="slide8">Slide 8</div>
+          <div class="swiper-slide" id="slide9">Slide 9</div>
+
+          <div class="swiper-slide" id="slide10">Slide 10</div>
+          <div class="swiper-slide" id="slide11">Slide 11</div>
+          <div class="swiper-slide" id="slide12">Slide 12</div>
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination d-md-block d-lg-none"></div>
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
@@ -651,8 +663,8 @@
         observer: true,
         observeParents: true,
         loop: true,
-        spaceBetween: 100,
-        slidesPerView: 1.2,
+        spaceBetween: 30,
+        slidesPerView: 1.5,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
@@ -674,76 +686,6 @@
         // },
       });
       </script>
-
-
-
-
-
-      <div class="carousell" data-bs-ride="carousel">
-        <!-- ☲☲☲☲ CAROUSEL ELEMENT ☲☲☲☲ -->
-        <div class="carousell-images">
-          <div class="carousel-element">
-            <!-- <img src="source/carousel/1.png" class="d-block" alt="..."> -->
-          </div>
-          <div class="carousel-element">
-            <!-- <img src="source/carousel/1-1.png" class="d-block" alt="..."> -->
-          </div>
-          <div class="carousel-element">
-            <!-- <img src="source/carousel/2.png" class="d-block" alt="..."> -->
-          </div>
-        </div>
-        <!-- ☲☲☲☲ CAROUSEL ARROWS ☲☲☲☲ -->
-        <div class="slide left" onclick="side_slide(-1)">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"><path fill="#34485c" fill-rule="evenodd" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="m -936.99995,909.46219 0.69993,-0.69993 5.30007,5.29997 -5.30007,5.29997 -0.69993,-0.69993 4.60004,-4.60004 -4.60004,-4.60004 z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(942 -906.362)"/></svg>
-        </div>
-        <div class="slide right" onclick="side_slide(1)">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"><path fill="#34485c" fill-rule="evenodd" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="m -936.99995,909.46219 0.69993,-0.69993 5.30007,5.29997 -5.30007,5.29997 -0.69993,-0.69993 4.60004,-4.60004 -4.60004,-4.60004 z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(942 -906.362)"/></svg>
-        </div>
-        <!-- ☲☲☲☲ CAROUSEL INDICATOR ☲☲☲☲ -->
-        <div class="btm-sliders">
-          <span onclick="btm_slide(1)"></span>
-          <span onclick="btm_slide(2)"></span>
-          <span onclick="btm_slide(3)"></span>
-          <span onclick="btm_slide(4)"></span>
-        </div>
-      </div>
-
-      <script>
-        var indexValue 1;
-        showCarouselElement(indexValue);
-        function btm_slide(e){showImg(indexValue e);}
-        function side_slide(e){showImg(indexValue += e);}
-        function showCarouselElement(e){
-          const carouselElement = document.querySelectorAl1('.carousel-element');
-          const sliders = document.querySelectorAl1('.btm-sliders span');
-          if(e>img.length){indexValue 1};
-          if(e<1){indexValue img.length};
-          for(i=0;i<img.length; i++){
-            img[i].style.display "none";
-          }
-          img[indexValue-1].style.display "block";
-        }
-      </script>
-        <!-- <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="source/carousel/1.png" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="source/carousel/1-1.png" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="source/carousel/2.png" class="d-block" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
-
     </section>
   </body>
 </html>

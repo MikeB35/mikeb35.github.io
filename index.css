@@ -519,26 +519,63 @@ body .main-page {
 }
 body .main-page .swiper {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 body .main-page .swiper .swiper-wrapper .swiper-slide {
   background-color: #ffc107;
-  border: solid #2196f3 3px;
-}
-body .main-page .swiper .swiper-wrapper .swiper-slide#slide1 {
-  background-image: url("source/images/Nav-Shop-The-Look-Field-Ratio.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide1 {
+  background-image: url("source/carousel/1.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide2 {
+  background-image: url("source/carousel/1-1.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide3 {
+  background-image: url("source/carousel/2.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide4 {
+  background-image: url("source/carousel/2-2.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide5 {
+  background-image: url("source/carousel/3.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide6 {
+  background-image: url("source/carousel/3-2.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide7 {
+  background-image: url("source/carousel/4.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide8 {
+  background-image: url("source/carousel/4-1.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide9 {
+  background-image: url("source/carousel/5.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide10 {
+  background-image: url("source/carousel/5-1.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide11 {
+  background-image: url("source/carousel/6.png");
+}
+body .main-page .swiper .swiper-wrapper .swiper-slide#slide12 {
+  background-image: url("source/carousel/6-1.png");
+}
+body .main-page .swiper .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
 body .main-page .swiper .swiper-pagination-bullet-active {
-  background-color: #f44336;
+  background-color: #ffffff;
 }
 body .main-page .swiper .swiper-button-prev {
-  color: #f44336;
+  color: #ffffff;
 }
 body .main-page .swiper .swiper-button-next {
-  color: #f44336;
+  color: #ffffff;
 }
 body .main-page .carousell {
   position: relative;
