@@ -3,46 +3,46 @@
   height: 600px;
 }
 .swiper .swiper-wrapper .swiper-slide {
-  background-color: #ffc107;
+  background-color: #9c27b0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .swiper .swiper-wrapper .swiper-slide#slide1 {
-  background-image: url("../source/carousel/1.png");
+  background-image: url("1.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide2 {
-  background-image: url("../source/carousel/1-1.png");
+  background-image: url("1-1.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide3 {
-  background-image: url("../source/carousel/2.png");
+  background-image: url("2.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide4 {
-  background-image: url("../source/carousel/2-2.png");
+  background-image: url("2-2.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide5 {
-  background-image: url("../source/carousel/3.png");
+  background-image: url("3.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide6 {
-  background-image: url("../source/carousel/3-2.png");
+  background-image: url("3-2.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide7 {
-  background-image: url("../source/carousel/4.png");
+  background-image: url("4.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide8 {
-  background-image: url("../source/carousel/4-1.png");
+  background-image: url("4-1.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide9 {
-  background-image: url("../source/carousel/5.png");
+  background-image: url("5.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide10 {
-  background-image: url("../source/carousel/5-1.png");
+  background-image: url("5-1.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide11 {
-  background-image: url("../source/carousel/6.png");
+  background-image: url("6.png");
 }
 .swiper .swiper-wrapper .swiper-slide#slide12 {
-  background-image: url("../source/carousel/6-1.png");
+  background-image: url("6-1.png");
 }
 .swiper .swiper-pagination-bullet {
   width: 30px;
@@ -57,4 +57,14 @@
 }
 .swiper .swiper-button-next {
   color: #ffffff;
+}
+@media screen and (min-width: 100px) {
+  .d-xs-none {
+    display: none!important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .d-xs-none {
+    display: block!important;
+  }
 }
