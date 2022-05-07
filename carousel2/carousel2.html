@@ -46,26 +46,26 @@
           <div class="swiper-slide" id="slide1">
             <!-- ☲☲☲☲ HEADING ☲☲☲☲ -->
             <div class="heading">
-              <h1>Type your heading1</h1>
+              <h1>FLEXIBILNÍ ÚLOŽNÝ PROSTOR, OPTIMÁLNÍ ERGONOMIE</h1>
             </div>
             <!-- ☲☲☲☲ TEXT ☲☲☲☲ -->
-            <p>Type some text here</p>
+            <p class="text">VŠE, CO SE NEVEJDE DO KUCHYŇSKÝCH SKŘÍNĚK, SE ZAVĚSÍ NA STĚNU</p>
           </div>
           <div class="swiper-slide" id="slide2">
             <!-- ☲☲☲☲ HEADING ☲☲☲☲ -->
             <div class="heading">
-              <h1>Type your heading2</h1>
+              <h1>TI, USILUJÍCÍ O DOKONALOST</h1>
             </div>
             <!-- ☲☲☲☲ TEXT ☲☲☲☲ -->
-            <p>Type some text here</p>
+            <p class="text">PŘEMÝŠLEJÍ OD VIDITELNÉHO ZÁŽITKU Z INTERIÉRU PO PRAKTICKÉ VYUŽITÍ</p>
           </div>
           <div class="swiper-slide" id="slide3">
             <!-- ☲☲☲☲ HEADING ☲☲☲☲ -->
             <div class="heading">
-              <h1>Type your heading3</h1>
+              <h1>SUPERHVĚZDA KAŽDÉ KUCHYNĚ </h1>
             </div>
             <!-- ☲☲☲☲ TEXT ☲☲☲☲ -->
-            <p>Type some text here</p>
+            <p class="text">MODERNÍ SERVÍROVACÍ VOZÍK S VELKÝM ÚLOŽNÝM PROSTOREM</p>
           </div>
         </div>
 
@@ -88,6 +88,10 @@
           effect: 'fade',
           fadeEffect: {
             crossFade: true
+          },
+          autoplay: {
+           delay: 5000,
+           disableOnInteraction: false
           },
         // Optional parameters
         observer: true,
@@ -123,7 +127,12 @@
         fadeEffect: {
           crossFade: true
         },
+        autoplay: {
+         delay: 5000,
+        },
       // Optional parameters
+      allowTouchMove: false,
+
       observer: true,
       observeParents: true,
       loop: true,
