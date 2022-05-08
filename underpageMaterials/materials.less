@@ -1,14 +1,222 @@
 @light: #f7eee3;
 @dark1: #514f4d;
 @dark2: #383633;
-@font-face {
-  font-family: main-font-burrow;
-  src: url(source/GT-America-Extended-Medium-Trial.otf);
-}
-@font-face {
-  font-family: neuzeit;
-  src: url(source/Neuzeit.ttf);
-}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲☲☲☲☲ MAIN CONTENT ☲☲☲☲☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
 body{
+  .header{
+    // background: #50cefd;
+    .header-image{
+      width: 100%;
+      height: 739px;
+      background-image: url("1.png");
+      background-size: cover;
+    }
+    .header-title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: -2.5rem;
+      left: 16.5%;
+      background: #ffffff;
+      width: 42rem;
+      box-shadow: inset 1px 50px 30px -30px #c2c3c2;
+      padding: .5rem 0;
+      h1{
+        font-size: 4.2rem;
+        font-weight: 800;
 
+      }
+    }
+  }
+}
+
+
+
+
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ DESKTOP ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 1400px) {
+
+}
+
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ LAPTOP ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 1200px)  and (max-width: 1400px){
+  body{
+    .header{
+      // background: #50cefd;
+      .header-image{
+        width: 100%;
+        height: 739px;
+        // background: #8bc34a;
+        // background-image: url("1.png");
+        // background-size: cover;
+      }
+      // .header-title{
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   position: relative;
+      //   top: -2.5rem;
+      //   left: 16.5%;
+      //   background: #ffffff;
+      //   width: 42rem;
+      //   box-shadow: inset 1px 50px 30px -30px #c2c3c2;
+      //   padding: .5rem 0;
+      //   h1{
+      //     font-size: 4.2rem;
+      //     font-weight: 800;
+      //
+      //   }
+      // }
+    }
+  }
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ SMALL LAPTOP ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  body{
+    .header{
+      // background: #50cefd;
+      .header-image{
+        width: 100%;
+        height: 739px;
+        // background: #ffeb3b;
+        // background-image: url("1.png");
+        // background-size: cover;
+      }
+      // .header-title{
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   position: relative;
+      //   top: -2.5rem;
+      //   left: 16.5%;
+      //   background: #ffffff;
+      //   width: 42rem;
+      //   box-shadow: inset 1px 50px 30px -30px #c2c3c2;
+      //   padding: .5rem 0;
+      //   h1{
+      //     font-size: 4.2rem;
+      //     font-weight: 800;
+      //
+      //   }
+      // }
+    }
+  }
+}
+
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ TABLET ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 768px) and (max-width: 992px){
+  body{
+    .header{
+      // background: #50cefd;
+      .header-image{
+        width: 100%;
+        height: 739px;
+        // background: #e91e63;
+        // background-image: url("1.png");
+        // background-size: cover;
+      }
+      .header-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -2.5rem;
+        left: 16.5%;
+        background: #ffffff;
+        width: 32rem;
+        box-shadow: inset 1px 50px 30px -30px #c2c3c2;
+        padding: .5rem 0;
+        h1{
+          font-size: 3.2rem;
+          font-weight: 800;
+
+        }
+      }
+    }
+  }
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ PHONE ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 576px) and (max-width: 768px){
+  body{
+    .header{
+      // background: #50cefd;
+      .header-image{
+        width: 100%;
+        height: 739px;
+        // background: #673ab7;
+        // background-image: url("1.png");
+        // background-size: cover;
+      }
+      .header-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -2.5rem;
+        left: 16.5%;
+        background: #ffffff;
+        width: 32rem;
+        box-shadow: inset 1px 50px 30px -30px #c2c3c2;
+        padding: .5rem 0;
+        h1{
+          font-size: 3.2rem;
+          font-weight: 800;
+
+        }
+      }
+    }
+  }
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ SMALL PHONE ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (max-width: 576px) {
+  body{
+    .header{
+      // background: #50cefd;
+      .header-image{
+        width: 100%;
+        height: 539px;
+        // background: #795548;
+        // background-image: url("1.png");
+        // background-size: cover;
+      }
+      .header-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -2.5rem;
+        left: 2.5%;
+        background: #ffffff;
+        width: 22rem;
+        box-shadow: inset 1px 50px 30px -30px #c2c3c2;
+        padding: .3rem 0;
+        h1{
+          font-size: 2.2rem;
+          font-weight: 800;
+
+        }
+      }
+    }
+  }
 }
