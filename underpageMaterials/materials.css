@@ -27,6 +27,9 @@ body .header .header-title h1 {
   font-size: 4.2rem;
   font-weight: 800;
 }
+.cover_image_wrapper {
+  height: 70vh;
+}
 @media (min-width: 1200px) and (max-width: 1400px) {
   body .header .header-image {
     width: 100%;
