@@ -32,14 +32,14 @@
           background-size: cover;
           background-position: center;
           // border: solid #2196f3 3px;
-          &#slide1{
-            background-image: url("1.png");
+          &#slide13{
+            background-image: url("carousel2-images/1.png");
           }
-          &#slide2{
-            background-image: url("2.png");
+          &#slide14{
+            background-image: url("carousel2-images/2.png");
           }
-          &#slide3{
-            background-image: url("3.png");
+          &#slide15{
+            background-image: url("carousel2-images/3.png");
           }
         }
 
@@ -126,6 +126,100 @@
     }
   }
 }
+
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ DESKTOP ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+  .slideshow{
+    flex-wrap: nowrap;
+    .carousel2{
+      width:100%;
+    }
+  }
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ LAPTOP ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 1200px)  and (max-width: 1400px){
+  .slideshow{
+    flex-wrap: nowrap;
+    .carousel2{
+      width:100%;
+      .swiper{
+        max-width: 30rem;
+        height: 30rem;
+      }
+    }
+  }
+
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ SMALL LAPTOP ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .slideshow{
+    flex-wrap: nowrap;
+    .carousel2{
+      width:100%;
+      .swiper{
+        max-width: 30rem;
+        height: 30rem;
+
+      }
+    }
+  }
+}
+
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ TABLET ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+// @media (min-width: 768px) and (max-width: 992px){
+//
+// }
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ PHONE ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 576px) and (max-width: 768px){
+  .slideshow{
+    .carousel2{
+      width:100%;
+      .swiper{
+        max-width:30rem;
+        height: 30rem;
+      }
+    }
+  }
+
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ SMALL PHONE ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (max-width: 576px) {
+  .slideshow{
+    .carousel2{
+      width:100%;
+      .swiper{
+
+        max-width:30rem;
+        height: 30rem;
+      }
+    }
+  }
+
+}
+
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ MODIFICATIONS ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+
 @media screen and (min-width: 100px){
   .d-xs-none {
       display: none!important;
