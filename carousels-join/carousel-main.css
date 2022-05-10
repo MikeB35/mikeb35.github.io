@@ -222,6 +222,16 @@
     height: 30rem;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .slideshow .carousel2 {
+    width: 100%;
+  }
+  .slideshow .carousel2 .swiper {
+    background-color: #aaa7e6;
+    max-width: 40rem;
+    height: 40rem;
+  }
+}
 @media (min-width: 576px) and (max-width: 768px) {
   .slideshow .carousel2 {
     width: 100%;
