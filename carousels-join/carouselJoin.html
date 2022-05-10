@@ -45,55 +45,13 @@
         <div class="swiper-pagination d-md-block d-lg-none pagination1"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev d-xs-none d-sm-none d-md-block d-lg-block button1"></div>
-        <div class="swiper-button-next d-xs-none d-sm-none d-md-block d-lg-block button1"></div>
+        <div class="swiper-button-prev d-xs-none d-sm-none d-md-block d-lg-block button-bk-1"></div>
+        <div class="swiper-button-next d-xs-none d-sm-none d-md-block d-lg-block button-nx-1"></div>
 
         <!-- If we need scrollbar -->
         <!-- <div class="swiper-scrollbar"></div>
       </div> -->
       </div>
-      <script>
-        /*SWITCH BETWEEN DEVICES VARIABLES*/
-        var device;
-        var carouselShowSlidesCount = 1.5;
-        var deviceWidth = (window.inheritWidth > 0) ? window.inheritWidth : screen.width;
-        /*SWITCH BETWEEN DEVICES FUNCTION*/
-
-        console.log(deviceWidth);
-        if (1700 >= deviceWidth || deviceWidth >= 1400){
-          device = "pc";
-          carouselShowSlidesCount = 1.5;
-          console.log(device);
-
-        }else if (1400 >= deviceWidth || deviceWidth >= 1200){
-          device = "laptop";
-          carouselShowSlidesCount = 1.5;
-          console.log(device);
-
-        }else if(1200 >= deviceWidth || deviceWidth >= 992){
-          device = "Slaptop";
-          carouselShowSlidesCount = 1;
-          console.log(device);
-
-        }else if( 992 >= deviceWidth || deviceWidth >= 768){
-          device = "tablet";
-          carouselShowSlidesCount = 1;
-          console.log(device);
-
-        }else if(768 >= deviceWidth || deviceWidth >= 576){
-          device = "mobile";
-          carouselShowSlidesCount = 1;
-          console.log(device);
-
-        }else if(576 >= deviceWidth){
-          device = "Smobile";
-          carouselShowSlidesCount = 1;
-          console.log(device);
-
-        }
-
-        /*SLIDER JS CODE, but in show slides count set carouselShowSlideCount variable*/
-      </script>
     <script>
     const swiper1 = new Swiper('.swiper1', {
       // Optional parameters
@@ -101,7 +59,7 @@
       observeParents: true,
       loop: true,
       spaceBetween: 30,
-      slidesPerView: carouselShowSlidesCount,
+      slidesPerView: 1.5,
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
@@ -113,10 +71,43 @@
 
       // Navigation arrows
       navigation: {
-        nextEl: '.button1',
-        prevEl: '.button1',
+        nextEl: '.button-nx-1',
+        prevEl: '.button-bk-1',
+      },
+      breakpoints: {
+      // when window width is >= 320px ==> s-mobile
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+
+      },
+      // when window width is >= 576px ==> mobile
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+
+      },
+      // when window width is >= 768px ==> tablet
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+
       },
 
+      // when window width is >= 992px ==> s-laptop
+      992: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+      },
+      // when window width is >= 1200px ==> laptop
+      1200: {
+        slidesPerView: 1.5,
+      },
+      // when window width is >= 1400px ==> desktop
+      1400: {
+        slidesPerView: 1.5,
+      },
+    },
       // And if we need scrollbar
       // scrollbar: {
       //   el: '.swiper-scrollbar',
@@ -147,8 +138,8 @@
           <!-- <div class="swiper-pagination"></div> -->
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev  button2"></div>
-          <div class="swiper-button-next  button2"></div>
+          <div class="swiper-button-prev  button-bk-2"></div>
+          <div class="swiper-button-next  button-nx-2"></div>
 
           <!-- If we need scrollbar -->
           <!-- <div class="swiper-scrollbar"></div>
@@ -209,11 +200,10 @@
             },
             autoplay: {
              delay: 5000,
-             disableOnInteraction: false
+             disableOnInteraction: false,
             },
           // Optional parameters
           allowTouchMove: false,
-
           observer: true,
           observeParents: true,
           loop: true,
@@ -230,8 +220,8 @@
 
           // Navigation arrows
           navigation: {
-            nextEl: '.button2',
-            prevEl: '.button2',
+            nextEl: '.button-nx-2',
+            prevEl: '.button-bk-2',
           },
 
           // And if we need scrollbar
@@ -249,7 +239,7 @@
           },
           autoplay: {
            delay: 5000,
-           disableOnInteraction: false
+           disableOnInteraction: false,
 
           },
         // Optional parameters
@@ -271,8 +261,8 @@
 
         // Navigation arrows
         navigation: {
-          nextEl: '.button2',
-          prevEl: '.button2',
+          nextEl: '.button-nx-2',
+          prevEl: '.button-bk-2',
         },
 
         // And if we need scrollbar
@@ -375,8 +365,8 @@
           </div>
           <!-- If we need navigation buttons -->
           <div class="controllers">
-            <div class="swiper-button-prev button4"></div>
-            <div class="swiper-button-next button4"></div>
+            <div class="swiper-button-prev button-bk-4"></div>
+            <div class="swiper-button-next button-nx-4"></div>
           </div>
 
 
@@ -410,13 +400,13 @@
         // ⇋⇋⇋⇋⇋ SWIPER WITH IMAGES ⇋⇋⇋⇋⇋
         // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
           const swiper4 = new Swiper('.swiper4',{
-            // effect: 'fade',
-            // fadeEffect: {
-            //   crossFade: false;
-            // },
+            effect: 'fade',
+            fadeEffect: {
+              crossFade: true
+            },
             autoplay: {
              delay: 1000,
-             disableOnInteraction: false
+             disableOnInteraction: false,
 
             },
           // Optional parameters
@@ -431,22 +421,19 @@
           watchSlidesVisibility: true,
           watchSlidesProgress: true,
           // If we need pagination
-          // pagination: {
-          //   el: '.swiper-pagination',
-          //   clickable: true,
-          // },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
 
           // Navigation arrows
           navigation: {
-            nextEl: '.button4',
-            prevEl: '.button4',
+            nextEl: '.button-nx-4',
+            prevEl: '.button-bk-4',
           },
 
-          // And if we need scrollbar
-          // scrollbar: {
-          //   el: '.swiper-scrollbar',
-          // },
         });
+
         // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
         // ⇋⇋⇋⇋⇋ SWIPER WITH TEXT ⇋⇋⇋⇋⇋
         // ⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋⇋
@@ -457,11 +444,12 @@
           },
           autoplay: {
            delay: 1000,
-           disableOnInteraction: false
+           disableOnInteraction: false,
 
           },
         // Optional parameters
         allowTouchMove: false,
+
         observer: true,
         observeParents: true,
         loop: true,
@@ -478,8 +466,8 @@
 
         // Navigation arrows
         navigation: {
-          nextEl: '.button4',
-          prevEl: '.button4',
+          nextEl: '.button-nx-4',
+          prevEl: '.button-bk-4',
         },
 
       });

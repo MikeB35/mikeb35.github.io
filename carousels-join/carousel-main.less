@@ -206,103 +206,6 @@
     }
   }
 
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-  // ☲☲☲☲ DESKTOP ☲☲☲☲
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-
-  @media (min-width: 1400px) and (max-width: 1700px) {
-    .slideshow{
-      flex-wrap: nowrap;
-      .carousel2{
-        width:100%;
-      }
-    }
-  }
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-  // ☲☲☲☲ LAPTOP ☲☲☲☲
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-
-  @media (min-width: 1200px)  and (max-width: 1400px){
-    .slideshow{
-      flex-wrap: nowrap;
-      .carousel2{
-        width:100%;
-        .swiper{
-          max-width: 30rem;
-          height: 30rem;
-        }
-      }
-    }
-
-  }
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-  // ☲☲☲☲ SMALL LAPTOP ☲☲☲☲
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-
-  @media (min-width: 992px) and (max-width: 1200px) {
-    .slideshow{
-      flex-wrap: nowrap;
-      .carousel2{
-        width:100%;
-        .swiper{
-          max-width: 30rem;
-          height: 30rem;
-        }
-      }
-    }
-  }
-
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-  // ☲☲☲☲ TABLET ☲☲☲☲
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-
-  @media (min-width: 768px) and (max-width: 992px){
-    .slideshow{
-      .carousel2{
-        width:100%;
-        .swiper{
-          background-color: #aaa7e6;
-          max-width:40rem;
-          height: 40rem;
-        }
-      }
-    }
-
-  }
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲
-  // ☲☲☲☲ PHONE ☲☲☲☲
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲
-
-  @media (min-width: 576px) and (max-width: 768px){
-    .slideshow{
-      .carousel2{
-        width:100%;
-        .swiper{
-          max-width:30rem;
-          height: 30rem;
-        }
-      }
-    }
-
-  }
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-  // ☲☲☲☲ SMALL PHONE ☲☲☲☲
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-
-  @media (max-width: 576px) {
-    .slideshow{
-      .carousel2{
-        width:100%;
-        .swiper{
-
-          max-width:30rem;
-          height: 30rem;
-        }
-      }
-    }
-
-  }
-
 
 
 
@@ -482,6 +385,9 @@
   @media (min-width: 1400px) and (max-width: 1700px) {
     .slideshow{
       flex-wrap: nowrap;
+      .carousel2{
+        width: 100%;
+      }
       .carousel3{
         width:100%;
       }
@@ -494,12 +400,13 @@
   @media (min-width: 1200px)  and (max-width: 1400px){
     .slideshow{
       flex-wrap: nowrap;
+      .carousel2{
+        width:100%;
+
+      }
       .carousel3{
         width:100%;
-        // .swiper{
-        //   max-width: 30rem;
-        //   height: 30rem;
-        // }
+
       }
     }
 
@@ -511,6 +418,14 @@
   @media (min-width: 992px) and (max-width: 1200px) {
     .slideshow{
       flex-wrap: nowrap;
+      .carousel2{
+        width:100%;
+        .swiper{
+          max-width: 30rem;
+          height: 30rem;
+
+        }
+      }
       .carousel3{
         width:100%;
         .swiper{
@@ -522,24 +437,55 @@
     }
   }
 
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
-  // ☲☲☲☲ TABLET ☲☲☲☲
-  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+  // ☲☲☲☲ TABLET + NEW PHONES ☲☲☲☲
+  // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
 
-  // @media (min-width: 768px) and (max-width: 992px){
-  //
-  // }
+  @media (min-width: 768px) and (max-width: 992px){
+    .carousel1{
+      .swiper{
+        height: 1000px;
+      }
+    }
+    .slideshow{
+      .carousel2{
+        width:100%;
+        .swiper{
+          // background-color: #aaa7e6;
+          max-width:55rem;
+          height: 55rem;
+        }
+      }
+      .carousel3{
+        width:100%;
+        .swiper{
+          // background-color: #aaa7e6;
+          max-width:55rem;
+          height: 55rem;
+        }
+      }
+    }
+
+  }
   // ☲☲☲☲☲☲☲☲☲☲☲☲☲
   // ☲☲☲☲ PHONE ☲☲☲☲
   // ☲☲☲☲☲☲☲☲☲☲☲☲☲
 
   @media (min-width: 576px) and (max-width: 768px){
     .slideshow{
+      .carousel2{
+        width:100%;
+        .swiper{
+
+          max-width:30rem;
+          height: 30rem;
+        }
+      }
       .carousel3{
         width:100%;
         .swiper{
-          max-width:40rem;
-          height: 40rem;
+          max-width:30rem;
+          height: 30rem;
         }
       }
     }
@@ -551,6 +497,14 @@
 
   @media (max-width: 576px) {
     .slideshow{
+      .carousel2{
+        width:100%;
+        .swiper{
+
+          max-width:30rem;
+          height: 30rem;
+        }
+      }
       .carousel3{
         width:100%;
         .swiper{
