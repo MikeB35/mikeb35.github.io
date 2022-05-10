@@ -94,7 +94,6 @@
   max-width: 40rem;
   min-width: 25rem;
   height: 40rem;
-  background: #ffc107;
 }
 .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide {
   background-color: #9e9e9e;
@@ -222,6 +221,9 @@
     max-width: 30rem;
     height: 30rem;
   }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  background: #ffc107;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .slideshow .carousel2 {
