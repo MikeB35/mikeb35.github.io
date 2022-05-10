@@ -94,6 +94,7 @@
   max-width: 40rem;
   min-width: 25rem;
   height: 40rem;
+  background: #ffc107;
 }
 .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide {
   background-color: #9e9e9e;
