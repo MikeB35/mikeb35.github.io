@@ -400,6 +400,20 @@
   .carousel1 .swiper {
     height: 1000px;
   }
+  .carousel1 .swiper .swiper-button-prev {
+    color: #ffffff;
+  }
+  .carousel1 .swiper .swiper-button-prev::after {
+    font-size: 80px;
+  }
+  .carousel1 .swiper .swiper-button-next {
+    position: absolute;
+    right: 1.5rem;
+    color: #ffffff;
+  }
+  .carousel1 .swiper .swiper-button-next::after {
+    font-size: 80px;
+  }
   .slideshow .carousel2 {
     width: 100%;
   }
@@ -407,12 +421,42 @@
     max-width: 55rem;
     height: 55rem;
   }
+  .slideshow .carousel2 .swiper .swiper-pagination-bullet {
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #9e9e9e;
+  }
+  .slideshow .carousel2 .swiper .swiper-pagination-bullet-active {
+    background-color: #2d2d2d;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-prev {
+    color: #ffffff;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-prev::after {
+    font-size: 80px;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-next {
+    color: #ffffff;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-next::after {
+    font-size: 80px;
+  }
   .slideshow .carousel3 {
     width: 100%;
   }
   .slideshow .carousel3 .swiper {
     max-width: 55rem;
     height: 55rem;
+  }
+  .slideshow .carousel3 .swiper .controllers {
+    width: 130px;
+  }
+  .slideshow .carousel3 .swiper .controllers .swiper-button-prev::after {
+    font-size: 40px;
+  }
+  .slideshow .carousel3 .swiper .controllers .swiper-button-next::after {
+    font-size: 40px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -422,6 +466,12 @@
   .slideshow .carousel2 .swiper {
     max-width: 30rem;
     height: 30rem;
+  }
+  .slideshow .carousel2 .swiper .swiper-pagination-bullet {
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #9e9e9e;
   }
   .slideshow .carousel3 {
     width: 100%;
@@ -438,6 +488,12 @@
   .slideshow .carousel2 .swiper {
     max-width: 30rem;
     height: 30rem;
+  }
+  .slideshow .carousel2 .swiper .swiper-pagination-bullet {
+    width: 70px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #9e9e9e;
   }
   .slideshow .carousel3 {
     width: 100%;
