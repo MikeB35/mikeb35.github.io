@@ -397,8 +397,83 @@
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .slideshow {
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .slideshow .carousel2 {
+    height: 30rem;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .slideshow .carousel2 .swiper {
+    max-width: 25rem;
+    height: 25rem;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-prev {
+    color: #ffffff;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-prev::after {
+    font-size: 30px;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-next {
+    color: #ffffff;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-next::after {
+    font-size: 30px;
+  }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .heading h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .slideshow .carousel2 .swiper.swiper3 {
+    height: 25rem;
+  }
+  .slideshow .carousel3 {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .slideshow .carousel3 .swiper {
+    max-width: 25rem;
+    height: 25rem;
+  }
+  .slideshow .carousel3 .swiper .controllers {
+    top: 530px;
+    left: 2.5rem;
+    width: 100px;
+  }
+  .slideshow .carousel3 .swiper .controllers .swiper-button-prev::after {
+    font-size: 30px;
+  }
+  .slideshow .carousel3 .swiper .controllers .swiper-button-next::after {
+    font-size: 30px;
+  }
+  .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide {
+    padding: 3rem;
+  }
+  .slideshow .carousel3 .swiper.swiper4 {
+    max-width: 25rem;
+    height: 25rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
   .carousel1 .swiper {
-    height: 1000px;
+    height: 400px;
   }
   .carousel1 .swiper .swiper-button-prev {
     color: #ffffff;
@@ -416,31 +491,35 @@
   }
   .slideshow .carousel2 {
     width: 100%;
+    padding: 0;
   }
   .slideshow .carousel2 .swiper {
-    max-width: 55rem;
-    height: 55rem;
+    max-width: 25rem;
+    height: 25rem;
+    padding-top: 2rem;
   }
   .slideshow .carousel2 .swiper .swiper-pagination-bullet {
-    width: 60px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: #9e9e9e;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #141414;
   }
   .slideshow .carousel2 .swiper .swiper-pagination-bullet-active {
     background-color: #2d2d2d;
   }
   .slideshow .carousel2 .swiper .swiper-button-prev {
+    margin-top: 0.1rem;
     color: #ffffff;
   }
   .slideshow .carousel2 .swiper .swiper-button-prev::after {
-    font-size: 80px;
+    font-size: 30px;
   }
   .slideshow .carousel2 .swiper .swiper-button-next {
+    margin-top: 0.1rem;
     color: #ffffff;
   }
   .slideshow .carousel2 .swiper .swiper-button-next::after {
-    font-size: 80px;
+    font-size: 30px;
   }
   .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .heading {
     height: 15rem;
@@ -453,7 +532,7 @@
   }
   .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .heading h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
   }
@@ -466,28 +545,26 @@
             align-items: center;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    height: 10rem;
-    font-size: 1.5rem;
+    padding: 2rem;
+    font-size: 1rem;
   }
   .slideshow .carousel2 .swiper.swiper3 {
-    height: 30rem;
+    height: 15rem;
+    margin-top: 2rem;
   }
   .slideshow .carousel3 {
     width: 100%;
+    padding: 2rem 0;
   }
   .slideshow .carousel3 .swiper {
-    max-width: 55rem;
-    height: 55rem;
+    max-width: 25rem;
+    height: 25rem;
+    padding: 2rem 0;
   }
   .slideshow .carousel3 .swiper .controllers {
-    top: 530px;
-    width: 130px;
-  }
-  .slideshow .carousel3 .swiper .controllers .swiper-button-prev::after {
-    font-size: 40px;
-  }
-  .slideshow .carousel3 .swiper .controllers .swiper-button-next::after {
-    font-size: 40px;
+    top: 230px;
+    left: -10px;
+    width: 100px;
   }
   .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .heading {
     height: 15rem;
@@ -499,59 +576,133 @@
             align-items: center;
   }
   .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .heading h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .text {
     font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .slideshow .carousel3 .swiper.swiper4 {
-    max-width: 40rem;
-    height: 40rem;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .slideshow .carousel2 {
-    width: 100%;
-  }
-  .slideshow .carousel2 .swiper {
-    max-width: 30rem;
-    height: 30rem;
-  }
-  .slideshow .carousel2 .swiper .swiper-pagination-bullet {
-    width: 50px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: #9e9e9e;
-  }
-  .slideshow .carousel3 {
-    width: 100%;
-  }
-  .slideshow .carousel3 .swiper {
-    max-width: 30rem;
-    height: 30rem;
+    max-width: 20rem;
+    min-width: 15rem;
+    height: 15rem;
   }
 }
 @media (max-width: 576px) {
+  .carousel1 .swiper {
+    height: 400px;
+  }
+  .carousel1 .swiper .swiper-button-prev {
+    color: #ffffff;
+  }
+  .carousel1 .swiper .swiper-button-prev::after {
+    font-size: 80px;
+  }
+  .carousel1 .swiper .swiper-button-next {
+    position: absolute;
+    right: 1.5rem;
+    color: #ffffff;
+  }
+  .carousel1 .swiper .swiper-button-next::after {
+    font-size: 80px;
+  }
   .slideshow .carousel2 {
     width: 100%;
+    padding: 0;
   }
   .slideshow .carousel2 .swiper {
-    max-width: 30rem;
-    height: 30rem;
+    max-width: 25rem;
+    height: 25rem;
+    padding-top: 2rem;
   }
   .slideshow .carousel2 .swiper .swiper-pagination-bullet {
-    width: 50px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: #9e9e9e;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #141414;
+  }
+  .slideshow .carousel2 .swiper .swiper-pagination-bullet-active {
+    background-color: #2d2d2d;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-prev {
+    margin-top: 0.1rem;
+    color: #ffffff;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-prev::after {
+    font-size: 30px;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-next {
+    margin-top: 0.1rem;
+    color: #ffffff;
+  }
+  .slideshow .carousel2 .swiper .swiper-button-next::after {
+    font-size: 30px;
+  }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .heading {
+    height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .heading h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+  .slideshow .carousel2 .swiper.swiper3 {
+    height: 15rem;
+    margin-top: 2rem;
   }
   .slideshow .carousel3 {
     width: 100%;
+    padding: 2rem 0;
   }
   .slideshow .carousel3 .swiper {
-    max-width: 30rem;
-    height: 30rem;
+    max-width: 25rem;
+    height: 25rem;
+    padding: 2rem 0;
+  }
+  .slideshow .carousel3 .swiper .controllers {
+    top: 230px;
+    left: -10px;
+    width: 100px;
+  }
+  .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .heading {
+    height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .heading h1 {
+    font-size: 1.5rem;
+  }
+  .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+  }
+  .slideshow .carousel3 .swiper.swiper4 {
+    max-width: 20rem;
+    min-width: 15rem;
+    height: 15rem;
   }
 }
 @media screen and (min-width: 100px) {
