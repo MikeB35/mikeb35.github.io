@@ -352,6 +352,18 @@
 .slideshow .carousel3 .swiper .controllers .swiper-button-next::after {
   font-size: 20px;
 }
+@media (min-width: 1700px) {
+  .slideshow {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .slideshow .carousel2 {
+    width: 100%;
+  }
+  .slideshow .carousel3 {
+    width: 100%;
+  }
+}
 @media (min-width: 1400px) and (max-width: 1700px) {
   .slideshow {
     -ms-flex-wrap: nowrap;
@@ -489,13 +501,19 @@
   .carousel1 .swiper .swiper-button-next::after {
     font-size: 80px;
   }
+  .slideshow {
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   .slideshow .carousel2 {
     width: 100%;
     padding: 0;
   }
   .slideshow .carousel2 .swiper {
-    max-width: 25rem;
-    height: 25rem;
+    max-width: 22.5rem;
+    min-width: 5rem;
+    height: 22.5rem;
     padding-top: 2rem;
   }
   .slideshow .carousel2 .swiper .swiper-pagination-bullet {
@@ -535,6 +553,7 @@
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    padding: 0 1.5rem;
   }
   .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .text {
     display: -webkit-box;
@@ -549,8 +568,7 @@
     font-size: 1rem;
   }
   .slideshow .carousel2 .swiper.swiper3 {
-    height: 15rem;
-    margin-top: 2rem;
+    height: 20rem;
   }
   .slideshow .carousel3 {
     width: 100%;
@@ -652,6 +670,7 @@
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    padding: 0 1rem;
   }
   .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .text {
     display: -webkit-box;
@@ -666,8 +685,7 @@
     font-size: 1rem;
   }
   .slideshow .carousel2 .swiper.swiper3 {
-    height: 15rem;
-    margin-top: 2rem;
+    height: 20rem;
   }
   .slideshow .carousel3 {
     width: 100%;
