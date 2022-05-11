@@ -442,6 +442,36 @@
   .slideshow .carousel2 .swiper .swiper-button-next::after {
     font-size: 80px;
   }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .heading {
+    height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .heading h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .slideshow .carousel2 .swiper .swiper-wrapper .swiper-slide .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    height: 10rem;
+    font-size: 1.5rem;
+  }
+  .slideshow .carousel2 .swiper.swiper3 {
+    height: 30rem;
+  }
   .slideshow .carousel3 {
     width: 100%;
   }
@@ -450,6 +480,7 @@
     height: 55rem;
   }
   .slideshow .carousel3 .swiper .controllers {
+    top: 530px;
     width: 130px;
   }
   .slideshow .carousel3 .swiper .controllers .swiper-button-prev::after {
@@ -457,6 +488,26 @@
   }
   .slideshow .carousel3 .swiper .controllers .swiper-button-next::after {
     font-size: 40px;
+  }
+  .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .heading {
+    height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .heading h1 {
+    font-size: 2.5rem;
+  }
+  .slideshow .carousel3 .swiper .swiper-wrapper .swiper-slide .text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+  }
+  .slideshow .carousel3 .swiper.swiper4 {
+    max-width: 40rem;
+    height: 40rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
