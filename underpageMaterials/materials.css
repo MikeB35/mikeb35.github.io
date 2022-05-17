@@ -282,7 +282,7 @@ body .section5 .section5-image .text p {
   font-family: Roboto;
 }
 body .section5 .section5-image a {
-  position: relative;
+  position: absolute;
   padding: 12px 35px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -296,13 +296,15 @@ body .section5 .section5-image#section5-image1 {
   background-image: url("podstrankaMaterialyImages/banner1.jpeg");
 }
 body .section5 .section5-image#section5-image1 a {
-  margin-top: 5rem;
+  top: 70%;
+  margin-top: 0;
 }
 body .section5 .section5-image#section5-image2 {
   background-image: url("podstrankaMaterialyImages/banner2.jpeg");
 }
 body .section5 .section5-image#section5-image2 a {
-  top: 2.8rem;
+  top: 70%;
+  margin-top: 0;
 }
 body .cover_image_wrapper {
   margin-top: 3rem;
@@ -699,7 +701,7 @@ body .cover_image_wrapper {
     font-family: Roboto;
   }
   body .section5 .section5-image a {
-    position: relative;
+    position: absolute;
     padding: 12px 25px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -714,13 +716,15 @@ body .cover_image_wrapper {
     background-image: url("podstrankaMaterialyImages/banner1.jpeg");
   }
   body .section5 .section5-image#section5-image1 a {
-    margin-top: .5rem;
+    top: 75%;
+    margin-top: 0;
   }
   body .section5 .section5-image#section5-image2 {
     background-image: url("podstrankaMaterialyImages/banner2.jpeg");
   }
   body .section5 .section5-image#section5-image2 a {
-    top: .6rem;
+    top: 75%;
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -755,6 +759,7 @@ body .cover_image_wrapper {
   }
   body .section1 .section1-content {
     max-width: 30.6rem;
+    left: 50%;
   }
   body .section2 {
     display: -webkit-box;
@@ -982,7 +987,7 @@ body .cover_image_wrapper {
     font-family: Roboto;
   }
   body .section5 .section5-image a {
-    position: relative;
+    position: absolute;
     padding: 12px 25px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -997,13 +1002,15 @@ body .cover_image_wrapper {
     background-image: url("podstrankaMaterialyImages/banner1.jpeg");
   }
   body .section5 .section5-image#section5-image1 a {
-    margin-top: .5rem;
+    top: 70%;
+    margin-top: 0;
   }
   body .section5 .section5-image#section5-image2 {
     background-image: url("podstrankaMaterialyImages/banner2.jpeg");
   }
   body .section5 .section5-image#section5-image2 a {
-    top: .6rem;
+    top: 70%;
+    margin-top: 0;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1289,7 +1296,7 @@ body .cover_image_wrapper {
     font-family: Roboto;
   }
   body .section5 .section5-image a {
-    position: relative;
+    position: absolute;
     padding: 12px 25px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1304,13 +1311,15 @@ body .cover_image_wrapper {
     background-image: url("podstrankaMaterialyImages/banner1.jpeg");
   }
   body .section5 .section5-image#section5-image1 a {
-    margin-top: .5rem;
+    margin-top: 0;
+    top: 65%;
   }
   body .section5 .section5-image#section5-image2 {
     background-image: url("podstrankaMaterialyImages/banner2.jpeg");
   }
   body .section5 .section5-image#section5-image2 a {
-    top: .6rem;
+    margin-top: 0;
+    top: 65%;
   }
   body .cover_image_wrapper {
     margin-top: 1rem;
@@ -1356,7 +1365,8 @@ body .cover_image_wrapper {
             justify-content: center;
   }
   body .section1 .section1-content {
-    width: 16.6rem;
+    width: 100%;
+    padding: 0 1rem 0 1rem;
     left: 0;
     -webkit-transform: translate(0);
             transform: translate(0);
@@ -1600,7 +1610,7 @@ body .cover_image_wrapper {
     font-family: Roboto;
   }
   body .section5 .section5-image a {
-    position: relative;
+    position: absolute;
     padding: 12px 25px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1615,13 +1625,15 @@ body .cover_image_wrapper {
     background-image: url("podstrankaMaterialyImages/banner1.jpeg");
   }
   body .section5 .section5-image#section5-image1 a {
-    margin-top: .5rem;
+    top: 70%;
+    margin-top: 0;
   }
   body .section5 .section5-image#section5-image2 {
     background-image: url("podstrankaMaterialyImages/banner2.jpeg");
   }
   body .section5 .section5-image#section5-image2 a {
-    top: .6rem;
+    top: 75%;
+    margin-top: 0;
   }
   body .cover_image_wrapper {
     margin-top: 1rem;
