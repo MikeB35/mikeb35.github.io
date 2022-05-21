@@ -289,6 +289,447 @@
 .slideshow .carousel3 .swiper .controllers .swiper-button-next::after {
   font-size: 20px;
 }
+.carousel6 .swiper {
+  width: 100%;
+  height: 700px;
+}
+.carousel6 .swiper .swiper-wrapper {
+  height: 600px;
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide {
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide26 {
+  background-image: url("bratislava/1.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide27 {
+  background-image: url("bratislava/2.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide28 {
+  background-image: url("bratislava/3.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide29 {
+  background-image: url("bratislava/4.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide30 {
+  background-image: url("bratislava/5.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide31 {
+  background-image: url("bratislava/6.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide32 {
+  background-image: url("bratislava/7.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide33 {
+  background-image: url("bratislava/8.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide34 {
+  background-image: url("bratislava/9.jpg");
+}
+.carousel6 .swiper .swiper-wrapper .swiper-slide#slide35 {
+  background-image: url("bratislava/10.jpg");
+}
+.carousel6 .swiper .pagination6 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel6 .swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+.carousel6 .swiper .swiper-pagination-bullet-active {
+  background-color: #000000;
+}
+.carousel6 .swiper .swiper-button-prev {
+  color: #ffffff;
+}
+.carousel6 .swiper .swiper-button-next {
+  color: #ffffff;
+}
+.carousel7 .swiper {
+  width: 100%;
+  height: 700px;
+}
+.carousel7 .swiper .swiper-wrapper {
+  height: 600px;
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide {
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide26 {
+  background-image: url("bratislava/1.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide27 {
+  background-image: url("bratislava/2.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide28 {
+  background-image: url("bratislava/3.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide29 {
+  background-image: url("bratislava/4.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide30 {
+  background-image: url("bratislava/5.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide31 {
+  background-image: url("bratislava/6.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide32 {
+  background-image: url("bratislava/7.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide33 {
+  background-image: url("bratislava/8.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide34 {
+  background-image: url("bratislava/9.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide35 {
+  background-image: url("bratislava/10.jpg");
+}
+.carousel7 .swiper .pagination6 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel7 .swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+.carousel7 .swiper .swiper-pagination-bullet-active {
+  background-color: #000000;
+}
+.carousel7 .swiper .swiper-button-prev {
+  color: #ffffff;
+}
+.carousel7 .swiper .swiper-button-next {
+  color: #ffffff;
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide36 {
+  background-image: url("cb-miele/1.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide37 {
+  background-image: url("cb-miele/2.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide38 {
+  background-image: url("cb-miele/3.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide39 {
+  background-image: url("cb-miele/4.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide40 {
+  background-image: url("cb-miele/5.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide41 {
+  background-image: url("cb-miele/6.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide42 {
+  background-image: url("cb-miele/7.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide43 {
+  background-image: url("cb-miele/8.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide44 {
+  background-image: url("cb-miele/9.jpg");
+}
+.carousel7 .swiper .swiper-wrapper .swiper-slide#slide45 {
+  background-image: url("cb-miele/10.jpg");
+}
+.carousel7 .swiper .pagination7 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel8 .swiper {
+  width: 100%;
+  height: 700px;
+}
+.carousel8 .swiper .swiper-wrapper {
+  height: 600px;
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide {
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide26 {
+  background-image: url("bratislava/1.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide27 {
+  background-image: url("bratislava/2.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide28 {
+  background-image: url("bratislava/3.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide29 {
+  background-image: url("bratislava/4.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide30 {
+  background-image: url("bratislava/5.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide31 {
+  background-image: url("bratislava/6.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide32 {
+  background-image: url("bratislava/7.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide33 {
+  background-image: url("bratislava/8.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide34 {
+  background-image: url("bratislava/9.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide35 {
+  background-image: url("bratislava/10.jpg");
+}
+.carousel8 .swiper .pagination6 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel8 .swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+.carousel8 .swiper .swiper-pagination-bullet-active {
+  background-color: #000000;
+}
+.carousel8 .swiper .swiper-button-prev {
+  color: #ffffff;
+}
+.carousel8 .swiper .swiper-button-next {
+  color: #ffffff;
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide46 {
+  background-image: url("lightstyle-cb/1.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide47 {
+  background-image: url("lightstyle-cb/2.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide48 {
+  background-image: url("lightstyle-cb/3.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide49 {
+  background-image: url("lightstyle-cb/4.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide50 {
+  background-image: url("lightstyle-cb/5.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide51 {
+  background-image: url("lightstyle-cb/6.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide52 {
+  background-image: url("lightstyle-cb/7.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide53 {
+  background-image: url("lightstyle-cb/8.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide54 {
+  background-image: url("lightstyle-cb/9.jpg");
+}
+.carousel8 .swiper .swiper-wrapper .swiper-slide#slide55 {
+  background-image: url("lightstyle-cb/10.jpg");
+}
+.carousel8 .swiper .pagination8 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel9 .swiper {
+  width: 100%;
+  height: 700px;
+}
+.carousel9 .swiper .swiper-wrapper {
+  height: 600px;
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide {
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide26 {
+  background-image: url("bratislava/1.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide27 {
+  background-image: url("bratislava/2.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide28 {
+  background-image: url("bratislava/3.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide29 {
+  background-image: url("bratislava/4.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide30 {
+  background-image: url("bratislava/5.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide31 {
+  background-image: url("bratislava/6.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide32 {
+  background-image: url("bratislava/7.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide33 {
+  background-image: url("bratislava/8.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide34 {
+  background-image: url("bratislava/9.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide35 {
+  background-image: url("bratislava/10.jpg");
+}
+.carousel9 .swiper .pagination6 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel9 .swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+.carousel9 .swiper .swiper-pagination-bullet-active {
+  background-color: #000000;
+}
+.carousel9 .swiper .swiper-button-prev {
+  color: #ffffff;
+}
+.carousel9 .swiper .swiper-button-next {
+  color: #ffffff;
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide56 {
+  background-image: url("praha-lightstyle/1.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide57 {
+  background-image: url("praha-lightstyle/2.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide58 {
+  background-image: url("praha-lightstyle/3.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide59 {
+  background-image: url("praha-lightstyle/4.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide60 {
+  background-image: url("praha-lightstyle/5.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide61 {
+  background-image: url("praha-lightstyle/6.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide62 {
+  background-image: url("praha-lightstyle/7.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide63 {
+  background-image: url("praha-lightstyle/8.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide64 {
+  background-image: url("praha-lightstyle/9.jpg");
+}
+.carousel9 .swiper .swiper-wrapper .swiper-slide#slide65 {
+  background-image: url("praha-lightstyle/10.jpg");
+}
+.carousel9 .swiper .pagination9 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel10 .swiper {
+  width: 100%;
+  height: 700px;
+}
+.carousel10 .swiper .swiper-wrapper {
+  height: 600px;
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide {
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide26 {
+  background-image: url("bratislava/1.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide27 {
+  background-image: url("bratislava/2.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide28 {
+  background-image: url("bratislava/3.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide29 {
+  background-image: url("bratislava/4.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide30 {
+  background-image: url("bratislava/5.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide31 {
+  background-image: url("bratislava/6.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide32 {
+  background-image: url("bratislava/7.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide33 {
+  background-image: url("bratislava/8.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide34 {
+  background-image: url("bratislava/9.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide35 {
+  background-image: url("bratislava/10.jpg");
+}
+.carousel10 .swiper .pagination6 {
+  position: relative;
+  top: 2.5rem;
+}
+.carousel10 .swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+.carousel10 .swiper .swiper-pagination-bullet-active {
+  background-color: #000000;
+}
+.carousel10 .swiper .swiper-button-prev {
+  color: #ffffff;
+}
+.carousel10 .swiper .swiper-button-next {
+  color: #ffffff;
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide66 {
+  background-image: url("praha-miele/1.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide67 {
+  background-image: url("praha-miele/2.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide68 {
+  background-image: url("praha-miele/3.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide69 {
+  background-image: url("praha-miele/4.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide70 {
+  background-image: url("praha-miele/5.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide71 {
+  background-image: url("praha-miele/6.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide72 {
+  background-image: url("praha-miele/7.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide73 {
+  background-image: url("praha-miele/8.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide74 {
+  background-image: url("praha-miele/9.jpg");
+}
+.carousel10 .swiper .swiper-wrapper .swiper-slide#slide75 {
+  background-image: url("praha-miele/10.jpg");
+}
+.carousel10 .swiper .pagination10 {
+  position: relative;
+  top: 2.5rem;
+}
 @media (min-width: 1700px) {
   .slideshow {
     flex-wrap: nowrap;
