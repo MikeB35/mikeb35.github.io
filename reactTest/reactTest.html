@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reactTest.css">
-    <script src="js/react.development.js"></script>
-    <script src="js/react-dom.development.js"></script>
-
-    <!-- Don't use this in production: -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
     <title>reactTest</title>
 </head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel">
-    
-      function MyApp() {
-        return <h1>Hello, world!</h1>;
-      }
-
-      const container = document.getElementById('root');
-      const root = ReactDOM.createRoot(container);
-      root.render(<MyApp />);
-
-    </script>
-
-</body>
+  <body>
+      <div id="root"></div>
+      
+      <script type="text/babel">
+        import React from "react";
+        import React, { Component } from 'react';
+        import ReactDOM from 'react-dom';
+        class FirstComponent extends Component {
+          render() {
+            return (
+              <div className="firstComponent">
+              Hello, world! I am a FirstComponent.
+              </div>
+            );
+          } 
+        }
+        ReactDOM.render(
+        <FirstComponent />, // Note that this is the same as the variable you stored above
+        document.getElementById('root') );
+      </script>
+<!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  </body>
 </html>

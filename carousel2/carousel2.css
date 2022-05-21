@@ -1,32 +1,17 @@
 .slideshow {
   width: 100%;
   background: #f7eee3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .slideshow .carousel2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 70%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   background: #f7eee3;
   padding: 5rem 0;
 }
@@ -65,19 +50,10 @@
   color: #ffffff;
 }
 .slideshow .carousel2 .swiper.swiper2 .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #9e9e9e;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,12 +70,8 @@
 }
 .slideshow .carousel2 .swiper.swiper2 .swiper-slide .heading {
   height: 15rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .slideshow .carousel2 .swiper.swiper2 .swiper-slide .heading h1 {
   text-align: center;
@@ -108,12 +80,8 @@
   font-weight: 500;
 }
 .slideshow .carousel2 .swiper.swiper2 .swiper-slide .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   font-family: "Roboto", sans-serif;
   height: 10rem;
@@ -129,8 +97,7 @@
 }
 @media (min-width: 1400px) and (max-width: 1700px) {
   .slideshow {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .slideshow .carousel2 {
     width: 100%;
@@ -138,8 +105,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .slideshow {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .slideshow .carousel2 {
     width: 100%;
@@ -151,8 +117,7 @@
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .slideshow {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .slideshow .carousel2 {
     width: 100%;

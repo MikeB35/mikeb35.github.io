@@ -1,32 +1,17 @@
 .slideshow {
   width: 100%;
   background: #f7eee3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .slideshow .carousel3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 70%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .slideshow .carousel3 .swiper {
   max-width: 40rem;
@@ -73,19 +58,10 @@
   height: 40rem;
 }
 .slideshow .carousel3 .swiper.swiper2 .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
   background-color: #9e9e9e;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,12 +84,8 @@
 }
 .slideshow .carousel3 .swiper.swiper2 .swiper-slide .heading {
   height: 15rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .slideshow .carousel3 .swiper.swiper2 .swiper-slide .heading h1 {
   text-align: left;
@@ -137,11 +109,8 @@
 .slideshow .carousel3 .swiper .controllers {
   position: absolute;
   display: grid;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   grid-gap: 10px;
   width: 70px;
   height: 20px;
@@ -165,8 +134,7 @@
 }
 @media (min-width: 1400px) and (max-width: 1700px) {
   .slideshow {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .slideshow .carousel3 {
     width: 100%;
@@ -174,8 +142,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .slideshow {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .slideshow .carousel3 {
     width: 100%;
@@ -183,8 +150,7 @@
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .slideshow {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .slideshow .carousel3 {
     width: 100%;
