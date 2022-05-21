@@ -28,7 +28,34 @@ body .exampleSection {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+body .exampleSection .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .exampleSection .facebook h2 {
+  font-family: Kanit;
+}
 body .exampleSection .instagram {
-  overflow: hidden;
-  width: 25rem;
+  width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .exampleSection .instagram h2 {
+  font-family: Kanit;
 }
