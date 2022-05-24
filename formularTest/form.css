@@ -1,0 +1,116 @@
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .button {
+  cursor: pointer;
+}
+body .button .btn {
+  background: #000000;
+  border-radius: 25px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  background: #222933;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+body .button .btn:hover {
+  background: #eba800;
+  text-decoration: none;
+}
+body .form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+body .form .background {
+  position: relative;
+  top: -0.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 41, 51, 0.5);
+}
+body .form .form-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #eba800;
+}
+body .form .form-block .closeForm {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body .form .form-block .closeForm i {
+  font-size: 2rem;
+}
+body .form .form-block .form-body .interested-title {
+  padding: 0 2rem;
+}
+body .form .form-block .form-body .interested {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .form .form-block .form-body .interested .part {
+  padding: 0 2rem;
+}
+body .form .form-block .form-body .interested .part .form-control {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+body .form .form-block .form-body .interested .part .form-control input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 0.15em;
+  -webkit-transform: translateY(-0.1em);
+          transform: translateY(-0.1em);
+  display: grid;
+  grid-template-columns: 1em auto;
+}
+body .form .form-block .form-body .interested .part .form-control input[type="checkbox"]::before {
+  margin: .1em;
+  content: "";
+  width: .9em;
+  height: .9em;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  -webkit-box-shadow: inset 1em 1em var(--form-control-color);
+          box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: #222933;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+body .form .form-block .form-body .interested .part .form-control input[type="checkbox"]:checked::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
