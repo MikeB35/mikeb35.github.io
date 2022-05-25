@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Myriad Pro Regular;
+  src: url(myriad-pro/MYRIADPRO-REGULAR.woff);
+}
 body {
   height: 100vh;
   display: -webkit-box;
@@ -9,6 +13,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Myriad Pro Regular;
+  margin: 0;
 }
 body .button {
   cursor: pointer;
@@ -30,33 +36,37 @@ body .button .btn:hover {
   text-decoration: none;
 }
 body .form {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
 }
 body .form .background {
   position: relative;
-  top: -0.5rem;
   width: 100%;
   height: 100%;
   background-color: rgba(34, 41, 51, 0.5);
 }
 body .form .form-block {
   position: absolute;
-  top: 0;
-  left: 0;
-  background: #eba800;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #f7eee3;
 }
 body .form .form-block .closeForm {
   position: absolute;
   right: 0;
   top: 0;
+  padding: .5rem;
+  cursor: pointer;
 }
 body .form .form-block .closeForm i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 body .form .form-block .form-body .interested-title {
-  padding: 0 2rem;
+  padding: 2rem 2rem 0 4rem;
 }
 body .form .form-block .form-body .interested {
   display: -webkit-box;
@@ -66,6 +76,7 @@ body .form .form-block .form-body .interested {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 0 2rem;
 }
 body .form .form-block .form-body .interested .part {
   padding: 0 2rem;
@@ -73,7 +84,8 @@ body .form .form-block .form-body .interested .part {
 body .form .form-block .form-body .interested .part .form-control {
   display: grid;
   grid-template-columns: 1em auto;
-  gap: 0.5em;
+  gap: 0.5em 1rem;
+  font-size: 12pt;
 }
 body .form .form-block .form-body .interested .part .form-control input[type="checkbox"] {
   -webkit-appearance: none;
@@ -83,16 +95,15 @@ body .form .form-block .form-body .interested .part .form-control input[type="ch
   margin: 0;
   font: inherit;
   color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border-radius: 0.15em;
+  width: 1.25em;
+  height: 1.25em;
   -webkit-transform: translateY(-0.1em);
           transform: translateY(-0.1em);
   display: grid;
   grid-template-columns: 1em auto;
 }
 body .form .form-block .form-body .interested .part .form-control input[type="checkbox"]::before {
-  margin: .1em;
+  margin: .2em;
   content: "";
   width: .9em;
   height: .9em;
@@ -113,4 +124,260 @@ body .form .form-block .form-body .interested .part .form-control input[type="ch
 body .form .form-block .form-body .interested .part .form-control input[type="checkbox"]:checked::before {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+body .form .form-block .form-body .prefer-title {
+  padding: 2rem 2rem 0 4rem;
+}
+body .form .form-block .form-body .prefer {
+  padding: 0 2rem;
+}
+body .form .form-block .form-body .prefer .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 2rem;
+}
+body .form .form-block .form-body .prefer .part .form-control {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em 1rem;
+  padding-right: 5.3rem;
+  font-size: 12pt;
+  width: 5.5rem;
+}
+body .form .form-block .form-body .prefer .part .form-control input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.25em;
+  height: 1.25em;
+  -webkit-transform: translateY(-0.1em);
+          transform: translateY(-0.1em);
+  display: grid;
+  grid-template-columns: 1em auto;
+}
+body .form .form-block .form-body .prefer .part .form-control input[type="checkbox"]::before {
+  margin: .2em;
+  content: "";
+  width: .9em;
+  height: .9em;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  -webkit-box-shadow: inset 1em 1em var(--form-control-color);
+          box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: #222933;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+body .form .form-block .form-body .prefer .part .form-control input[type="checkbox"]:checked::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+body .form .form-block .form-body .info {
+  padding: 0 2rem;
+}
+body .form .form-block .form-body .info .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0 2rem;
+  padding: 1rem 2rem;
+}
+body .form .form-block .form-body .info .part input {
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 0.7rem;
+  font-family: Myriad Pro Regular;
+  font-size: 11pt;
+}
+body .form .form-block .form-body .info .part input::-webkit-input-placeholder {
+  opacity: .5;
+  font-size: 11pt;
+}
+body .form .form-block .form-body .info .part input:-ms-input-placeholder {
+  opacity: .5;
+  font-size: 11pt;
+}
+body .form .form-block .form-body .info .part input::-ms-input-placeholder {
+  opacity: .5;
+  font-size: 11pt;
+}
+body .form .form-block .form-body .info .part input::placeholder {
+  opacity: .5;
+  font-size: 11pt;
+}
+body .form .form-block .form-body .info .part input:focus {
+  outline: 1px solid #222933;
+}
+body .form .form-block .form-body .main-message .part {
+  padding: .5rem 0;
+  width: 100%;
+}
+body .form .form-block .form-body .main-message .part textarea {
+  resize: none;
+  border: none;
+  width: 93.3%;
+  height: 8rem;
+  padding: 1rem 2rem;
+  font-family: Myriad Pro Regular;
+  font-size: 12pt;
+}
+body .form .form-block .form-body .main-message .part textarea::-webkit-input-placeholder {
+  opacity: .5;
+  font-family: Myriad Pro Regular;
+  font-size: 12pt;
+}
+body .form .form-block .form-body .main-message .part textarea:-ms-input-placeholder {
+  opacity: .5;
+  font-family: Myriad Pro Regular;
+  font-size: 12pt;
+}
+body .form .form-block .form-body .main-message .part textarea::-ms-input-placeholder {
+  opacity: .5;
+  font-family: Myriad Pro Regular;
+  font-size: 12pt;
+}
+body .form .form-block .form-body .main-message .part textarea::placeholder {
+  opacity: .5;
+  font-family: Myriad Pro Regular;
+  font-size: 12pt;
+}
+body .form .form-block .form-body .main-message .part textarea:focus {
+  outline: 1px solid #222933;
+}
+body .form .form-block .form-body .submit {
+  padding-bottom: 1rem;
+}
+body .form .form-block .form-body .submit input {
+  position: relative;
+  left: calc(71%);
+  border: none;
+  background-color: #fff;
+  padding: 8px 5rem;
+  font-family: Myriad Pro Regular;
+  font-size: 12pt;
+  color: #3b3b3b;
+}
+body .form.active {
+  display: block;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  body .form .form-block {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body .form .form-block .form-body .prefer .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .form .form-block .form-body .prefer .part .form-control {
+    padding-bottom: 1rem;
+  }
+  body .form .form-block .form-body .main-message .part textarea {
+    width: 92%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  body .form .form-block {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body .form .form-block .form-body .interested {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .form .form-block .form-body .prefer .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .form .form-block .form-body .prefer .part .form-control {
+    padding-bottom: 1rem;
+  }
+  body .form .form-block .form-body .main-message .part textarea {
+    width: 90%;
+  }
+  body .form .form-block .form-body .submit {
+    padding-bottom: 1rem;
+  }
+  body .form .form-block .form-body .submit input {
+    position: relative;
+    left: 55%;
+  }
+}
+@media (max-width: 576px) {
+  body .form .form-block {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  body .form .form-block .form-body .interested-title {
+    padding-top: 1rem;
+  }
+  body .form .form-block .form-body .interested {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .form .form-block .form-body .prefer-title {
+    padding-top: 0;
+  }
+  body .form .form-block .form-body .prefer .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .form .form-block .form-body .prefer .part .form-control {
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+  }
+  body .form .form-block .form-body .info .part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+    padding-bottom: .5rem;
+    gap: 1rem 0;
+  }
+  body .form .form-block .form-body .main-message .part textarea {
+    width: 87%;
+  }
+  body .form .form-block .form-body .submit {
+    padding-bottom: 1rem;
+  }
+  body .form .form-block .form-body .submit input {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
 }

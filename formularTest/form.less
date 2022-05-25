@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Myriad Pro Regular;
+    src: url(myriad-pro/MYRIADPRO-REGULAR.woff);
+  }
 body{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family:  Myriad Pro Regular;
+    margin: 0;
     .button{
         cursor: pointer;
         .btn {
@@ -22,58 +28,63 @@ body{
         }
     }
     .form{
+        display: none;
         position: fixed;
         width: 100%;
         height: 100%;
         .background{
             position: relative;
-            top: -.5rem;
             width: 100%;
             height: 100%;
             background-color: rgba(34, 41, 51,.5);
         }
         .form-block{
             position: absolute;
-            top: 0;
-            left: 0;
-            background: #eba800;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f7eee3;
             .closeForm{
                 position: absolute;
                 right: 0;
                 top: 0;
+                padding: .5rem;
+                cursor: pointer;
                 i{
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
             }
             //* MAIN FORM BODY
             .form-body{
+                
                 .interested-title{
-                    padding: 0 2rem;
+                    padding:2rem 2rem 0 4rem;
                 }
                 .interested{
                     display: flex;
                     flex-direction: row;
+                    padding: 0 2rem;
                     .part{
                         padding: 0 2rem;
                         //* CHECKBOX
                         .form-control{
                             display: grid;
                             grid-template-columns: 1em auto;
-                            gap: 0.5em;
-                                input[type="checkbox"]{
+                            gap: 0.5em 1rem;
+                            font-size: 12pt;
+                            input[type="checkbox"]{
                                 appearance: none;
                                 background-color: #fff;
                                 margin: 0;
                                 font: inherit;
                                 color: currentColor;
-                                width: 1.15em;
-                                height: 1.15em;
-                                border-radius: 0.15em;
+                                width: 1.25em;
+                                height: 1.25em;
                                 transform: translateY(-0.1em);
                                 display: grid;
                                 grid-template-columns: 1em auto;
                                 &::before{
-                                    margin: .1em;
+                                    margin: .2em;
                                     content: "";
                                     width: .9em;
                                     height: .9em;
@@ -90,7 +101,260 @@ body{
                                 }
                             }
                         }
-                        
+                    }
+                }
+                .prefer-title{
+                    .interested-title();
+                }
+                .prefer{
+                    padding: 0 2rem;
+                    .part{
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0 2rem;
+                        .form-control{
+                            display: grid;
+                            grid-template-columns: 1em auto;
+                            gap: 0.5em 1rem;
+                            padding-right: 5.3rem;
+                            font-size: 12pt;
+                            width: 5.5rem;
+                            input[type="checkbox"]{
+                                appearance: none;
+                                background-color: #fff;
+                                margin: 0;
+                                font: inherit;
+                                color: currentColor;
+                                width: 1.25em;
+                                height: 1.25em;
+                                transform: translateY(-0.1em);
+                                display: grid;
+                                grid-template-columns: 1em auto;
+                                &::before{
+                                    margin: .2em;
+                                    content: "";
+                                    width: .9em;
+                                    height: .9em;
+                                    transform: scale(0);
+                                    transition: 120ms transform ease-in-out;
+                                    box-shadow: inset 1em 1em var(--form-control-color);
+                                    background-color: #222933;
+
+                                    transform-origin: bottom left;
+                                    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                                }
+                                &:checked::before{
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+                    }
+                }
+                .info{
+                    padding: 0 2rem;
+
+                    .part{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0 2rem;
+                        padding: 1rem 2rem;
+
+                        input{
+                            border: none;
+                            width: 100%;
+                            height: 2.5rem;
+                            padding: 0 0.7rem;
+                            font-family: Myriad Pro Regular;
+                            font-size: 11pt;
+                            &::placeholder{
+                                opacity: .5;
+                                font-size: 11pt;
+
+                            }
+                            &:focus{
+                                outline: 1px solid #222933;
+                            }
+                        }
+                    }
+                }
+                .main-message{
+                    .part{
+                        padding: .5rem 0;
+                        width: 100%;
+                        textarea{
+                            resize: none;
+                            border: none;
+                            width:93.3%;
+                            height: 8rem;
+                            padding: 1rem 2rem;
+                            font-family: Myriad Pro Regular;
+                            font-size: 12pt;
+                            &::placeholder{
+                                opacity: .5;
+                                // padding: 1rem 2rem;
+                                font-family: Myriad Pro Regular;
+                                font-size: 12pt;
+                            }
+                            &:focus{
+                                outline: 1px solid #222933;
+                            }
+                        }
+                    }
+                }
+                .submit{
+                    padding-bottom: 1rem;
+                    input{
+                        position: relative;
+                        left:calc(100% - 29rem) ;
+                        border: none;
+                        background-color: #fff;
+                        padding: 8px 5rem;
+                        font-family: Myriad Pro Regular;
+                        font-size: 12pt;
+                        color: #3b3b3b;
+                    }
+                }
+            }
+        }
+        &.active{
+            display: block;
+        }
+    }
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ TABLET ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 768px) and (max-width: 992px){
+    body{
+        .form{
+            .form-block{
+                overflow-y: scroll;
+                overflow-x: hidden;
+                width: 100%;
+                .form-body{
+                    .prefer{
+                        .part{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .form-control{
+                                padding-bottom: 1rem;
+
+                            }
+                        }
+                    }   
+                    .main-message{
+                        .part{
+                            textarea{
+                                width: 92%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ BIG PHONE ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+@media (min-width: 576px) and (max-width: 768px){
+    body{
+        .form{
+            .form-block{
+                overflow-y: scroll;
+                overflow-x: hidden;
+                width: 100%;
+                .form-body{
+                    .interested{
+                        flex-wrap: wrap;
+                    }
+                    .prefer{
+                        .part{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .form-control{
+                                padding-bottom: 1rem;
+
+                            }
+                        }
+                    }
+                    .main-message{
+                        .part{
+                            textarea{
+                                width: 90%;
+                            }
+                        }
+                    }
+                    .submit{
+                        padding-bottom: 1rem;
+                        input{
+                            position: relative;
+                            left:55%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// ☲☲☲☲☲☲☲☲☲☲☲☲
+// ☲☲☲☲ PHONE ☲☲☲☲
+// ☲☲☲☲☲☲☲☲☲☲☲☲
+@media (max-width: 576px) {
+    body{
+        .form{
+            .form-block{
+                overflow-y: scroll;
+                overflow-x: hidden;
+                width: 100%;
+                height: 100%;
+                .form-body{
+                    .interested-title{
+                        padding-top: 1rem;
+                    }
+                    .interested{
+                        flex-wrap: wrap;
+                    }
+                    .prefer-title{
+                        padding-top: 0;
+                    }
+                    .prefer{
+                        .part{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .form-control{
+                                padding-bottom: 1rem;
+                                padding-right: 2rem;
+                            }
+                        }
+                    }
+                    .info{
+                        .part{
+                            flex-direction: column;
+                            padding-top: 0;
+                            padding-bottom: .5rem;
+                            gap: 1rem 0;
+                            
+                        }
+                    }
+                    .main-message{
+                        .part{
+                            textarea{
+                                width: 87%;
+                            }
+                        }
+                    }
+                    .submit{
+                        padding-bottom: 1rem;
+                        input{
+                            position: relative;
+                            left:50%;
+                            transform: translate(-50%);
+                        }
                     }
                 }
             }

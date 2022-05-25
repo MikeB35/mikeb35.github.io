@@ -6,31 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
     <title>Form</title>
 </head>
 <body>
-    <section class="button">
+    <section class="button" onclick="openSendForm()">
         <div class="btn">Open form</div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
         <div class="background"></div>
         <div class="form-block">
-            <div class="closeForm"><i class="uil uil-multiply"></i></div>
+            <div class="closeForm" onclick="closeSendForm()"><i class="uil uil-multiply"></i></div>
             <form action="" class="form-body">
+           <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+                ☲☲☲☲ I'M INTERESTED IN ☲☲☲☲
+                ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
                 <h1 class="interested-title">Mám zájem o</h1>
                 <div class="interested">
-                    
                     <div class="part">
-                        <label class="form-control">
-                            <input type="checkbox" name="checkbox" />
-                            Checkbox
-                        </label><br>
-                        
-                        <label class="form-control">
-                            <input type="checkbox" name="checkbox"/>
-                            Checkbox - checked
-                        </label><br>
-
                         <label class="form-control">
                             <input type="checkbox" id="_3dNavrh" name="3dNavrh" value="3dNavrh">
                             3D Návrh zdarma
@@ -63,11 +56,70 @@
                         </label><br>
                     </div>
                 </div>
+           <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+                ☲☲☲☲ I PREFER ☲☲☲☲
+                ☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+                <h1 class="prefer-title">Preferuji značku</h1>
+                <div class="prefer">
+                    <div class="part">
+                        <label class="form-control">
+                            <input type="checkbox" id="schuler" name="schuller" value="schuller">
+                            Schüller
+                        </label><br>
+
+                        <label class="form-control">
+                            <input type="checkbox" id="next125" name="next125" value="next125">
+                            Next125
+                        </label><br>
+
+                        <label class="form-control">
+                            <input type="checkbox" id="lightstyle" name="lightstyle" value="lightstyle">
+                            Lightstyle
+                        </label><br>
+                        <label class="form-control">
+                            <input type="checkbox" id="nobila" name="nobila" value="nobila">
+                            Nobila
+                        </label><br>
+                        <label class="form-control">
+                            <input type="checkbox" id="pino" name="pino" value="pino">
+                            Pino
+                        </label><br>
+                    </div>
+                </div>
+            <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+                ☲☲☲☲ 3 TEXTAREAS ☲☲☲☲
+                ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+                <div class="info">
+                    <div class="part">
+                        <input type="tel" name="phone" id="phone" placeholder="telefon *" required>
+                        <input type="email" name="email" id="email" placeholder="e-mail *" required>
+                        <input type="text" name="city" id="city" placeholder="město *" required>
+                    </div>
+                </div>
+            <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+                ☲☲☲☲ MAIN TEXTAREA ☲☲☲☲
+                ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+                <div class="main-message">
+                    <div class="part">
+                        <textarea name="message" id="message" placeholder="Zde můžete napsat jakýkoli vzkaz" required></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Odeslat">
+                </div>
             </form>
+            
         </div>
     </section>
     <script>
-
+        function openSendForm(){
+            var form = document.getElementById("form")
+            form.classList.toggle("active");
+        }
+        function closeSendForm(){
+            var form = document.getElementById("form")
+            form.classList.toggle("active");
+        }
     </script>
 </body>
 </html>
