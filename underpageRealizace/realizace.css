@@ -1,0 +1,529 @@
+@font-face {
+  font-family: Myriad Pro Light;
+  src: url(myriad-pro/MyriadPro-Light.woff);
+}
+@font-face {
+  font-family: Myriad Pro Regular;
+  src: url(myriad-pro/MYRIADPRO-REGULAR.woff);
+}
+@font-face {
+  font-family: Myriad Pro Bold;
+  src: url(myriad-pro/MYRIADPRO-BOLD.woff);
+}
+@font-face {
+  font-family: Myriad Pro SemiBold;
+  src: url(myriad-pro/MYRIADPRO-SEMIBOLD.woff);
+}
+body {
+  font-family: Myriad Pro Light;
+}
+body .header_card {
+  height: 44rem;
+  background: url("main-images/Hlavnifotkasodstinem.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 4rem;
+  font-weight: 300;
+  margin: 0;
+}
+body .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0 3rem;
+  padding: 4rem 10rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+body .section1 .section1-content {
+  width: 38rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem 0;
+  color: #000;
+}
+body .section1 .section1-content h3 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: Myriad Pro Regular;
+}
+body .section1 .section1-content p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: Myriad Pro Light;
+}
+body .section1 .section1-content .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0 2rem;
+}
+body .section1 .section1-content .links a {
+  padding: 12px 35px 12px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 0.8rem;
+}
+body .section1 .section1-content .links a .small-image {
+  width: 25px;
+  height: 25px;
+}
+body .section1 .section1-content .links a .small-image#phone-icon {
+  background: url("main-images/icons/phone.png");
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+body .section1 .section1-content .links a .small-image#mail-icon {
+  background: url("main-images/icons/email.png");
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+}
+body .section1 .section1-image {
+  width: 617px;
+  height: 617px;
+  background-image: url("main-images/hlavni-podstranka/3.png");
+  background-size: cover;
+  background-position-x: 30%;
+}
+body .section1 .section1-image .share-block {
+  position: relative;
+  left: 1rem;
+  top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 1rem;
+}
+body .section2 {
+  padding: 0 20rem;
+  background-color: #f7eee3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem 0.5rem;
+}
+body .section2 .inspirace {
+  height: 40rem;
+  background: url("main-images/hlavni-podstranka/1.png");
+  background-size: cover;
+  background-position: center;
+}
+body .section2 .inspirace .section2-title {
+  /* From https://css.glass */
+  position: relative;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  font-family: Myriad Pro Bold;
+  font-size: 2.5rem;
+}
+body .section2 .inspirace .section2-content {
+  position: relative;
+  top: 73%;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+body .section2 .carousel {
+  width: 100%;
+}
+body .section2 .carousel .swiper1 {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+body .section2 .carousel .swiper1 .swiper-wrapper .swiper-slide {
+  background-color: #9e9e9e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .section2 .carousel .swiper1 .swiper-wrapper .swiper-slide#slide1 {
+  background-image: url("main-images/hlavni-podstranka/2.png");
+}
+body .section2 .carousel .swiper1 .swiper-wrapper .swiper-slide#slide2 {
+  background-image: url("main-images/hlavni-podstranka/3.png");
+}
+body .section2 .carousel .swiper1 .swiper-wrapper .slide-content {
+  position: absolute;
+  bottom: 3%;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+body .section2 .carousel .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
+body .section2 .carousel .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+body .section2 .carousel .swiper-button-prev {
+  color: #636363;
+}
+body .section2 .carousel .swiper-button-prev::after {
+  margin-right: 7rem;
+}
+body .section2 .carousel .swiper-button-next {
+  color: #636363;
+}
+body .section2 .carousel .swiper-button-next::after {
+  margin-left: 7rem;
+}
+body .section2 .inspirujte {
+  height: 43rem;
+  background: url("main-images/hlavni-podstranka/4.png");
+  background-size: cover;
+  background-position: center;
+}
+body .section2 .inspirujte .inspirujte-content {
+  position: relative;
+  top: 85%;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .section2 .inspirujte .inspirujte-content .text-content {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: Myriad Pro Regular;
+}
+body .section2 .inspirujte .inspirujte-content a {
+  padding: 10px 15px 10px 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Myriad Pro Light;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 0.5rem;
+}
+body .section2 .inspirujte .inspirujte-content a .small-image {
+  width: 20px;
+  height: 20px;
+}
+body .section2 .inspirujte .inspirujte-content a .small-image#arrow-icon {
+  background: url("main-images/icons/arrow.png");
+  background-position: center;
+  background-size: cover;
+}
+body .section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0;
+}
+body .section3 .section3-content {
+  position: relative;
+  padding: 0 23rem;
+}
+body .section3 .section3-content h3 {
+  font-size: 3rem;
+  font-family: Myriad Pro Bold;
+  text-align: center;
+}
+body .section3 .section3-content p {
+  font-size: 1.5rem;
+  font-family: Myriad Pro Regular;
+  text-align: center;
+}
+body .section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0 3rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+body .section4 .section4-image {
+  width: 567px;
+  height: 500px;
+  background-size: cover;
+  background-position-x: 30%;
+}
+body .section4 .section4-image#section4-image1 {
+  background-image: url("main-images/hlavni-podstranka/6.png");
+}
+body .section4 .section4-image#section4-image2 {
+  background-image: url("main-images/hlavni-podstranka/5.png");
+}
+body .section4 .section4-image .image-content {
+  position: relative;
+  font-family: Myriad Pro Regular;
+  top: 90%;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+body .section5 {
+  padding: 0 20rem;
+  background-color: #f7eee3;
+}
+body .section5 .top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem 0;
+}
+body .section5 .top-text .top-text-content {
+  position: relative;
+}
+body .section5 .top-text .top-text-content h3 {
+  font-size: 3rem;
+  font-family: Myriad Pro Bold;
+  text-align: center;
+}
+body .section5 .top-text .top-text-content p {
+  font-size: 1.5rem;
+  font-family: Myriad Pro Regular;
+  text-align: center;
+}
+body .section5 .grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+body .section5 .grid .grid-image {
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+}
+body .section5 .grid .grid-image#grid-image1 {
+  grid-area: 0.25;
+  background-image: url("main-images/hlavni-podstranka/3d4.png");
+}
+body .section5 .grid .grid-image#grid-image2 {
+  grid-area: 0.08333333;
+  background-image: url("main-images/hlavni-podstranka/3d3.png");
+}
+body .section5 .grid .grid-image#grid-image3 {
+  grid-area: 0.04166667;
+  background-image: url("main-images/hlavni-podstranka/3d5.png");
+}
+body .section5 .grid .grid-image#grid-image4 {
+  grid-area: 0.33333333;
+  background-image: url("main-images/hlavni-podstranka/3d8.png");
+}
+body .section5 .grid .grid-image#grid-image5 {
+  grid-area: 0.11111111;
+  background-image: url("main-images/hlavni-podstranka/3d6.png");
+}
+body .section5 .grid .grid-image#grid-image6 {
+  grid-area: 0.05555556;
+  background-image: url("main-images/hlavni-podstranka/3d7.png");
+}
+body .section5 .grid .grid-image#grid-image7 {
+  grid-area: 0.375;
+  background-image: url("main-images/hlavni-podstranka/3d9.png");
+}
+body .section5 .grid .grid-image#grid-image8 {
+  grid-area: 0.125;
+  background-image: url("main-images/hlavni-podstranka/3d1.png");
+}
+body .section5 .grid .grid-image#grid-image9 {
+  grid-area: 0.0625;
+  background-image: url("main-images/hlavni-podstranka/3d2.png");
+}
+body .section5 .see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0 1rem 0;
+}
+body .section5 .see-more a {
+  padding: 10px 15px 10px 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Myriad Pro Light;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 0.5rem;
+}
+body .section5 .see-more a .small-image {
+  width: 20px;
+  height: 20px;
+}
+body .section5 .see-more a .small-image#arrow-icon {
+  background: url("main-images/icons/arrow.png");
+  background-position: center;
+  background-size: cover;
+}
+body .section6 .section6-content {
+  max-width: 36.6rem;
+  min-width: 16.6rem;
+  position: relative;
+  left: 32.5%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 0;
+  gap: .5rem 0;
+}
+body .section6 .section6-content h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: Myriad Pro Regular;
+}
+body .section6 .section6-content p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: Myriad Pro Light;
+}
+body .section6 .section6-content a {
+  padding: 10px 15px 10px 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Myriad Pro Light;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 0.5rem;
+}
+body .section6 .section6-content a .small-image {
+  width: 20px;
+  height: 20px;
+}
+body .section6 .section6-content a .small-image#arrow-icon {
+  background: url("main-images/icons/arrow.png");
+  background-position: center;
+  background-size: cover;
+}
