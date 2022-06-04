@@ -5,22 +5,250 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="onepagePino.css">
-    <title>Lightstyle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>onepagePino</title>
 </head>
 <body>
+<!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ NAVIGATION ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
     <nav>
         <div class="menu-part">
             <div class="menu-logo">
-                LOGO
+                <img src="images/Pino.png" alt="pino">
             </div>
             <div class="menu">
-                <div class="menu-item">LOLOLOSHKA</div>
-                <div class="menu-item">KARTOSHKA</div>
-                <div class="menu-item">POMIDORKA</div>
+                <div class="menu-item"><a href="#">Produkty</a></div>
+                <div class="menu-item"><a href="#">S námi</a></div>
+                <div class="menu-item"><a href="#">Informace a pomoc</a></div>
             </div>
         </div>
-
-        
+        <div class="menu-part">
+            <div class="other-links">
+                <div class="shop-link">
+                    <a href="#">
+                        <p>Shop</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10"><path fill-rule="evenodd" d="M298.803 6405.678l1.424 1.484a.494.494 0 0 1-.366.836h-15.027c-.557 0-.834.45-.834 1.002v-.008c0 .553.277 1.009.834 1.009h15.012c.445 0 .672.54.363.857l-1.416 1.46a.989.989 0 0 0 .04 1.41l.002.005c.402.372 1.031.353 1.41-.043l3.204-3.343a1.992 1.992 0 0 0-.007-2.757l-3.176-3.283a1.003 1.003 0 0 0-1.402-.042l-.01.01a.985.985 0 0 0-.05 1.403" transform="translate(-284 -6404)"/></svg>                    
+                    </a>
+                </div>
+                <div class="heart-link">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>                    
+                    </a>
+                </div>
+                <div class="location-link">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2a8,8,0,0,0-8,8c0,5.4,7.05,11.5,7.35,11.76a1,1,0,0,0,1.3,0C13,21.5,20,15.4,20,10A8,8,0,0,0,12,2Zm0,17.65c-2.13-2-6-6.31-6-9.65a6,6,0,0,1,12,0C18,13.34,14.13,17.66,12,19.65ZM12,6a4,4,0,1,0,4,4A4,4,0,0,0,12,6Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,12Z"/></svg>
+                    </a>
+                </div>
+                <div class="hidden-menu-button" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="menu-2"><rect width="24" height="24" opacity="0" transform="rotate(180 12 12)"/><circle cx="4" cy="12" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="16" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="6" rx=".94" ry=".94"/></g></g></svg>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-menu" id="hidden-menu">
+            <div class="shadow" id="shadow" onclick="toggleMenu()"></div>
+            <div class="main-menu" id="main-menu">
+                <div class="close" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/></svg>   
+                </div>
+                <div class="main-links">
+                    <a href="#" class="big-link">Produkty</a>
+                    <a href="#" class="big-link">S námi</a>
+                    <a href="#" class="big-link">Informace a pomoc</a>
+                    <a href="#" class="big-link">Kariéra</a>
+                    <a href="#" class="small-link">Obchodník</a>
+                    <a href="#" class="small-link">Kontakt</a>
+                    <a href="#" class="small-link">Prodej výrobků druhé jakosti</a>
+                </div>
+            </div>
+        </div>
     </nav>
+    <script>
+        var shadow = document.getElementById("shadow")
+        var menu = document.getElementById("main-menu")
+        var hiddenMenu = document.getElementById("hidden-menu")
+        function toggleMenu(){
+            if (hiddenMenu.classList.contains("active")){
+                shadow.classList.remove("active")
+                menu.classList.remove("active")
+                setTimeout(() => {
+                    hiddenMenu.classList.remove("active")
+                }, 500)
+            }else{
+                hiddenMenu.classList.add("active")
+                setTimeout(() => {
+                    shadow.classList.add("active")
+                    menu.classList.add("active")
+                }, 10)
+                
+            }
+        }
+    </script>
+<!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ CAROUSEL ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+
+    <section class="main-carousel">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" id="slide1">
+                    <div class="content">
+                        <p>Filtr výrobků</p>
+                        <h3>NECHEJTE SE INSPIROVAT NAŠÍ PESTROU NABÍDKOU.</h3>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill-rule="evenodd" d="M 12.5 0 A 12.5 12.5 0 0 0 0 12.5 A 12.5 12.5 0 0 0 12.5 25 A 12.5 12.5 0 0 0 25 12.5 A 12.5 12.5 0 0 0 12.5 0 z M 10.65625 7.0566406 L 16 12.498047 L 10.65625 17.943359 L 9.9414062 17.242188 L 14.597656 12.498047 L 9.9414062 7.7558594 L 10.65625 7.0566406 z "/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide2">
+                    <div class="content">
+                        <p>Svět kuchyně</p>
+                        <h3>KUCHYNĚ PRO VÁŠ ŽIVOT.</h3>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill-rule="evenodd" d="M 12.5 0 A 12.5 12.5 0 0 0 0 12.5 A 12.5 12.5 0 0 0 12.5 25 A 12.5 12.5 0 0 0 25 12.5 A 12.5 12.5 0 0 0 12.5 0 z M 10.65625 7.0566406 L 16 12.498047 L 10.65625 17.943359 L 9.9414062 17.242188 L 14.597656 12.498047 L 9.9414062 7.7558594 L 10.65625 7.0566406 z "/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide3">
+                    <div class="content">
+                        <p>Úklidový prostor</p>
+                        <h3>CHYTRÉ NÁPADY PRO PLÁNOVÁNÍ VAŠEHO ÚKLIDOVÉHO PROSTORU.</h3>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill-rule="evenodd" d="M 12.5 0 A 12.5 12.5 0 0 0 0 12.5 A 12.5 12.5 0 0 0 12.5 25 A 12.5 12.5 0 0 0 25 12.5 A 12.5 12.5 0 0 0 12.5 0 z M 10.65625 7.0566406 L 16 12.498047 L 10.65625 17.943359 L 9.9414062 17.242188 L 14.597656 12.498047 L 9.9414062 7.7558594 L 10.65625 7.0566406 z "/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide4">
+                    <div class="content">
+                        <p>S námi</p>
+                        <h3>VÁŠEŇ, SRDCE A LÁSKA K NAŠIM KUCHYNÍM</h3>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill-rule="evenodd" d="M 12.5 0 A 12.5 12.5 0 0 0 0 12.5 A 12.5 12.5 0 0 0 12.5 25 A 12.5 12.5 0 0 0 25 12.5 A 12.5 12.5 0 0 0 12.5 0 z M 10.65625 7.0566406 L 16 12.498047 L 10.65625 17.943359 L 9.9414062 17.242188 L 14.597656 12.498047 L 9.9414062 7.7558594 L 10.65625 7.0566406 z "/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        effect: "coverflow",
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+
+        },
+        allowTouchMove: false,
+        
+        observer: true,
+        observeParents: true,
+        loop: true,
+        centeredSlides: true,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 4,
+        },
+        // Navigation arrows
+
+        breakpoints: {
+        // when window width is >= 320px ==> s-mobile
+        280: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+        },
+        // when window width is >= 576px ==> mobile
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+        },
+        // when window width is >= 768px ==> tablet
+        768: {
+            slidesPerView: 1,
+
+        },
+
+        // when window width is >= 992px ==> s-laptop
+        992: {
+            slidesPerView: 1,
+
+        },
+        // when window width is >= 1200px ==> laptop
+        1200: {
+            slidesPerView: 1,
+
+        },
+        // when window width is >= 1400px ==> desktop
+        1400: {
+            slidesPerView: 1,
+        },
+        2000: {
+            slidesPerView: 1,
+        },
+        },
+        });
+
+    </script>
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="background-blob">
+        <path fill="#FAF8F0" d="M45.8,-44.7C58.3,-33.4,66.5,-16.7,61.6,-4.9C56.7,6.9,38.7,13.8,26.2,30.4C13.8,47.1,6.9,73.5,-5.4,78.9C-17.7,84.3,-35.5,68.8,-39.9,52.1C-44.3,35.5,-35.5,17.7,-27,8.5C-18.5,-0.8,-10.5,-1.6,-6.1,-13C-1.6,-24.3,-0.8,-46.2,7.9,-54.2C16.7,-62.1,33.4,-56.1,45.8,-44.7Z" transform="translate(100 100)" />
+    </svg>
+<!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ SECTION 2 ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <section class="section2">
+        <p>Vytváříme živé kuchyně – protože víme, že dobrá kuchyně patří k životu jejích obyvatel. Z toho důvodu plánujeme kuchyně podle vašeho způsobu života a prostorů, v nichž bydlíte.</p>
+    </section>
+<!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ SECTION 3 ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <section class="section3">
+        <!-- ☲☲☲☲ SECTION 1 CONTENT ☲☲☲☲ -->
+        <div class="section3-content">
+        <p>Stará zástavba</p>  
+        <h3>VŠE, CO POTŘEBUJI</h3>
+        <p class="content-text">Zde se klade důraz na to, co je skutečně důležité, protože 
+            styl a funkčnost jdou u nás vždy ruku v ruce. Klasická 
+            kuchyně ve staré zástavbě s převýšením chytře využívá 
+            specifické možnosti malého bytu ve staré zástavbě. Zlatým hřebem 
+            je dokonale prostorově i opticky integrované jídelní místo.
+        </p> 
+        <div class="section1-button">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill-rule="evenodd" d="M 12.5 0 A 12.5 12.5 0 0 0 0 12.5 A 12.5 12.5 0 0 0 12.5 25 A 12.5 12.5 0 0 0 25 12.5 A 12.5 12.5 0 0 0 12.5 0 z M 10.65625 7.0566406 L 16 12.498047 L 10.65625 17.943359 L 9.9414062 17.242188 L 14.597656 12.498047 L 9.9414062 7.7558594 L 10.65625 7.0566406 z "/></svg>
+                Na výběr
+            </a>
+        </div>
+        </div>
+        <!-- ☲☲☲☲ SECTION 1 IMAGE ☲☲☲☲ -->
+        <div class="section3-image"></div>
+    </section>
 </body>
 </html>
