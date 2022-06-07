@@ -259,13 +259,15 @@
               display: none;
               cursor: pointer;
             }
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
             //* ▩▩▩▩ CONTACT DROPDOWN ▩▩▩▩
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
             .contact-dropdown{
               position: absolute;
-              left: 18.75rem;
+              left: 19rem;
               // height: 20rem;
               width: 30rem;
-              background-color: rgba(0, 150, 135, 1);
+              background-color:rgba(0, 150, 135, 1);
               display: none;
               .text{
                 display: flex;
@@ -398,38 +400,244 @@
                 }
               }
             }
-            //* ▩▩▩▩ CONTACT DROPDOWN HOVER ▩▩▩▩
-            &#buy{
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            //* ▩▩▩▩ KUCHYNE DROPDOWN ▩▩▩▩
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            .kuchyne-dropdown{
+              position: absolute;
+              left: 19.2rem;
+              // height: 20rem;
+              width: 30rem;
+              background-color: rgba(0, 150, 135, 1);
+              display: none;
+              .examples{
+                display: flex;
+                flex-direction: row;
+                padding: .7rem;
+                gap: 0 1rem;
+                .example{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: baseline;
+                  text-decoration: none;
+                  transition: .15s;
+                  h3{
+                    color: #fff;
+                    margin: .5rem 0 0 0;
+                  }
+                  p{
+                    color: #fff;
+                    margin: 0;
+                    font-size: .8rem;
+                    width: 100%;
+                    cursor:text;
+                  }
+                  &:hover{
+                    background-color: #00776b;
+                    padding: 2px;
+                    transform: scale(1.01);
+                  }
+                }
+              }
+              .line{
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+              }
+              .more-info{
+                h3{
+                  color: #fff;
+                  text-align: center;
+                  margin: 0;
+                  padding: 1rem 5rem 0 5rem;
+                  font-size: 1rem;
+                }
+                p{
+                  color: #fff;
+                  text-align: center;
+                  margin: 0;
+                  font-size: .8rem;
+                  padding: 0 5rem 1rem 5rem;
+                  cursor:text;
+                }
+              }
+              .contact{
+                background-color: #00776b;
+                p{
+                  color: #fff;
+                  text-align: center;
+                  margin: 0;
+                  font-size: .9rem;
+                  padding: .3rem 0;
+                  cursor:text;
+                }
+              }
+            }
+            //* ▩▩▩▩ KUCHYNE DROPDOWN HOVER ▩▩▩▩
+            &#kuchyne{
+              &:hover{
+                .kuchyne-dropdown{
+                  display: block;
+                }
+              }
+            }
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            //* ▩▩▩▩ KURYZ DROPDOWN ▩▩▩▩
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            .kurzy-dropdown{
+              .kuchyne-dropdown();
+              .examples{
+                .example{
+                  gap: .7rem 0;
+                  img{
+                    width: 100%;
+                  }
+                  p{
+                    font-weight: 500;
+                  }
+                }
+              }
+              .contact{
+                text-decoration: none;
+                p{
+                  cursor: pointer;
+                  width: 100%;
+                  background-color: #00776b;
+                }
+              }
+            }
+            //* ▩▩▩▩ KURZY DROPDOWN HOVER ▩▩▩▩
+            &#kurzy{
+              &:hover{
+                .kurzy-dropdown{
+                  display: block;
+                }
+              }
+            }
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            //* ▩▩▩▩ PRODEJNY DROPDOWN ▩▩▩▩
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            .prodejny-dropdown{
+              position: absolute;
+              left: 19.2rem;
+              // height: 20rem;
+              width: 30rem;
+              background-color: rgba(0, 150, 135, 1);
+              display: none;
+              padding: .5rem;
+              flex-direction: column;
+              gap: .5rem 0;
+              .prodejna{
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+                gap: 0 .5rem;
+                img{
+                  width: 150px;
+                  height: 100px;
+                }
+                .content{
+                  display: flex;
+                  flex-direction: column;
+                  h3{
+                    margin: 0;
+                    color: #fff;
+                  }
+                  p{
+                    margin: 0;
+                    font-size: .8rem;
+                  }
+                }
+              }
+              
+            }
+            //* ▩▩▩▩ PRODEJNY DROPDOWN HOVER ▩▩▩▩
+            &#prodejny{
+              &:hover{
+                .prodejny-dropdown{
+                  display: flex;
+                }
+              }
+            }
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            //* ▩▩▩▩ AKTUALITY DROPDOWN ▩▩▩▩
+            //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+            .aktuality-dropdown{
+              .kuchyne-dropdown();
+              position: absolute;
+              left: 19.2rem;
+              // height: 20rem;
+              width: 30rem;
+              background-color: rgba(0, 150, 135, 1);
+              display: none;
+              flex-direction: column;
+              gap: .5rem 0;
+              padding-top: .5rem;
+              .aktualita{
+                padding: 0 .5rem;
+                img{
+                  width: 100%;
+                }
+              }
+              .contact{
+                text-decoration: none;
+                p{
+                  cursor: pointer;
+                  width: 100%;
+                  background-color: #00776b;
+                }
+              }
+            }
+            //* ▩▩▩▩ AKTUALITY DROPDOWN HOVER ▩▩▩▩
+            &#aktuality{
               svg{
                 width: 20px;
                 height: 20px;
                 stroke: #fff;
               }
+              &:hover{
+                .aktuality-dropdown{
+                  display: flex;
+                }
+              }
             }
           }
+          //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
+          //* ▩▩▩▩ MAIN HOVER ▩▩▩▩
+          //* ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
           &:hover{
             // gap: 0 0;
+            position: relative;
+            left: -.5rem;
             background-color: rgba(0, 150, 135, 1);
             .aside-navigation-link{
               // height: calc(40px + 6rem);
               background-color:rgba(0, 150, 135, 0);
-              width: fit-content;
+              width: 90%;
               border-radius: 0;
-              padding: 0 9rem 0 .5rem;
+              padding: 0 5rem 0 1rem;
+              justify-content: flex-start;
               gap: 0 1rem;
               p{
                 display: block;
               }
               &#contact{
-                padding: 0 9rem 0 .6rem;
+                padding: 0 9rem 0 1.1rem;
               }
-              &#buy{
-                padding: 0 9rem 0 .6rem;
+              &#aktuality{
+                padding: 0 9rem 0 1.1rem;
               }
             }
             
           }
+          &:hover{
+            gap: 0;
+            .aside-navigation-link{
+              height: 48px ;
+            }
+          }
         }
+        
       }
     //? ▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩
     //? ▩▩▩▩ MAIN CAROUSEL ▩▩▩▩
