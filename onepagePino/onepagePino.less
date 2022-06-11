@@ -948,6 +948,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       .items{
         display: flex;
         align-items: center;
@@ -959,7 +960,7 @@
           align-items: baseline;
           justify-content: center;
           flex-direction: column;
-          width: 30rem;
+          width: 31rem;
           border-bottom: #a8a8a8 solid 2px;
           padding-bottom: 2rem;
           .top-text{
@@ -1073,6 +1074,173 @@
                 width: 25px;
                 height: 25px;
                 fill: #fff;
+              }
+            }
+          }
+          &#item1{
+            .image-part{
+              background: url("images/e-shop/1.jpg");
+              background-size: cover;
+            }
+          }
+          &#item2{
+            .image-part{
+              background: url("images/e-shop/1.jpg");
+              background-size: cover;
+            }
+          }
+          &#item3{
+            .image-part{
+              background: url("images/e-shop/2.jpg");
+              background-size: cover;
+            }
+          }
+          &#item4{
+            .image-part{
+              background: url("images/e-shop/1.jpg");
+              background-size: cover;
+            }
+          }
+          &#item5{
+            .image-part{
+              background: url("images/e-shop/1.jpg");
+              background-size: cover;
+            }
+          }
+          &#item6{
+            .image-part{
+              background: url("images/e-shop/3.jpg");
+              background-size: cover;
+            }
+          }
+          &#item7{
+            .image-part{
+              background: url("images/e-shop/4.jpg");
+              background-size: cover;
+            }
+          }
+          &#item8{
+            .image-part{
+              background: url("images/e-shop/4.jpg");
+              background-size: cover;
+            }
+          }
+          &#item9{
+            .image-part{
+              background: url("images/e-shop/5.jpg");
+              background-size: cover;
+            }
+          }
+          &#item10{
+            border: none;
+            .image-part{
+              background: url("images/e-shop/5.jpg");
+              background-size: cover;
+            }
+          }
+          &#item11{
+            border: none;
+            .image-part{
+              background: url("images/e-shop/6.jpg");
+              background-size: cover;
+            }
+          }
+          &#item12{
+            border: none;
+            .image-part{
+              background: url("images/e-shop/7.jpg");
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+    .show-more{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem 0;
+      .line{
+        height: 2px;
+        background-color: @pinoColor;
+        width: 40rem;
+        
+      }
+      a{
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 600;
+        color: #fff;
+        padding: 6px 30px;
+        background-color: @pinoColor;
+      }
+    }
+    .footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 5rem;
+      .first-images{
+        background-color: #202020;
+        width: 100% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 6rem;
+        img{
+          height: 4rem;
+        }
+      }
+      .part{
+        background-color: #080808;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0 10rem;
+        .first-line-column{
+          
+          h3{
+            font-weight: 700;
+            color: @pinoColor;
+            font-size: 1.3rem;
+          }
+          .links{
+            display: flex;
+            align-items: baseline;
+            gap: 0 2rem;
+            .column{
+              ul{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem 0;
+                list-style: none;
+                padding: none;
+                text-align: left;
+                margin-left: -40px;
+                li{
+                  a{
+                    text-decoration: none;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+          &#stickers{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 20rem;
+            gap: 1rem 2rem;
+            padding-top: 1.5rem;
+            .sticker{
+              img{
+                height: 2rem;
               }
             }
           }
