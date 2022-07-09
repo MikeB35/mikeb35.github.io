@@ -1,0 +1,247 @@
+@header-nav-bgColor: #f7eee3;
+@darkGrey: #202020;
+@font-face {
+    font-family: main-font-burrow;
+    src: url(../source/GT-America-Extended-Medium-Trial.otf);
+  }
+  @font-face {
+    font-family: neuzeit;
+    src: url(../source/Neuzeit.ttf);
+  }
+  @font-face {
+    font-family: Myriad Pro Light;
+    src: url(../underpageRealizace/myriad-pro/MyriadPro-Light.woff);
+  }
+  @font-face {
+    font-family: Myriad Pro Regular;
+    src: url(../underpageRealizace/myriad-pro/MYRIADPRO-REGULAR.woff);
+  }
+  @font-face {
+    font-family: Myriad Pro Bold;
+    src: url(../underpageRealizace/myriad-pro/MYRIADPRO-BOLD.woff);
+  }
+  @font-face {
+    font-family: Myriad Pro SemiBold;
+    src: url(../underpageRealizace/myriad-pro/MYRIADPRO-SEMIBOLD.woff);
+  }
+.button{
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    writing-mode: horizontal-tb !important;
+    outline: none;
+    -webkit-appearance: none;
+    border: none;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem 0.75rem 1.25rem;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    background: 0 0;
+    color: inherit;
+    font-family: main-font-burrow;
+    text-decoration: none;
+  }
+  button{
+    .button();
+  }
+  body{
+    margin: 0;
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    // ☲☲☲☲ NAVIGATION ☲☲☲☲
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    .header-navigation{
+      background-color: @darkGrey;
+      position: fixed;
+      width: 100%;
+      // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+      // ☲☲☲☲ SMALL TOP BANNER ☲☲☲☲
+      // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+      .header-nav-bx-utility-wrapper{
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: .7475rem;
+        letter-spacing: 0;
+        transition: all .25s;
+        background-color: @darkGrey;
+        position: relative;
+        justify-content: space-between;
+        width: 90%;
+        padding: 0 1rem 0 2rem;
+        align-items: center;
+        &.unpinned{
+          top: -0.7rem;
+          height: 0
+        }
+        .header-utility-navigation{
+          // WHEN NAVIGATION IS PINNED - SMALL BANNER IS SHOWN
+          display: flex;
+          flex-direction: row;
+          font-size: .7475rem;
+          line-height: 1rem;
+          letter-spacing: 0;
+          transition: all .25s;
+          // background-color: #f7eee3;
+          position: relative;
+          justify-content: space-between;
+          width: 77%;
+          align-items: center;
+  
+          .header-utility-navigation_banner{
+            position: relative;
+            left: 33%;
+            top: 50%;
+            transform: translate(-50%, 25%);
+            p{
+              font-family: Neuzeit;
+              letter-spacing: .3px;
+              color: #e4e4e4;
+            }
+          }
+          // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+          // ☲☲☲☲ SMALL TOP MENU ☲☲☲☲
+          // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+          .header-utility-menu{
+            display: flex;
+            justify-content: flex-end;
+            .link{
+              left: 25%;
+              font-family: Myriad Pro Light;
+              text-decoration: none;
+              padding: 0  1rem 0 1rem;
+              display: flex;
+              position: relative;
+              font-size: .9rem;
+              color: #e4e4e4;
+              white-space: nowrap;
+              align-items: center;
+
+              &:hover{
+                color: #888888!important;
+              }
+            }
+          }
+        }
+      }
+      .search-bar{
+        
+        padding: .6rem 0;
+        background-color: #111111;
+        .searchbox{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            width: 58%;
+            left: 50%;
+            transform: translate(-50%);
+            .logo{
+                img{
+                    width: 12rem;
+                }
+            }
+            form{
+                input{
+                    height: 2.2rem;
+                    border: none;
+                    padding: 0 0.7rem;
+                    font-family: Myriad Pro Regular;
+                    font-size: 11pt;
+                    &:focus{
+                        outline: 1px solid #222933;
+                    }
+                    &#bar{
+                        width: 35rem;
+                        
+                    }
+                    &#submit{
+                        background-color: #fc5900;
+                        color: white;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+            .kosik{
+                display: flex;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                gap: .5rem;
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        
+      }
+      .categories{
+        // padding: 1rem 0;
+        background-color: #fc5900;
+        .categories-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .category{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 8.5rem;
+                height: 4rem;
+                gap: 1rem;
+                padding: 1rem .5rem;
+                border-right: #db4e02 solid 2px;
+                border-left: #ff620e solid 2px;
+                transition: .3s;
+                text-decoration: none;
+                img{
+                    width: 2rem;
+                }
+                p{
+                    margin: 0;
+                    color: white;
+                    line-height: 1rem;
+                    font-size: .9rem;
+                }
+                &:hover{
+                    background-color: #ff782f;
+                }
+            }
+        }
+      }
+      .companies{
+        // padding: 1rem 0;
+        background-color: #000000;
+        .companies-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .company{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 .1rem;
+                img{
+                    height: 2rem;
+                }
+                p{
+                    margin: 0;
+                    color: white;
+                    line-height: 1rem;
+                    font-size: .9rem;
+                }
+                
+            }
+        }
+      }
+
+
+
+
+
+
+
+    }
+}
