@@ -15,6 +15,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="bosch.css">
 
+        <link href="https://api.fontshare.com/v2/css?f[]=outfit@1,400,900,800,300,500,600,200,100,700&display=swap" rel="stylesheet">
+
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -132,8 +134,220 @@
     </div>
     
 </header>
+<main>
+    <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <!-- ☲☲☲☲ AD BOX ☲☲☲☲ -->
+    <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <aside class="ad-box" id="ad-box-1">
+        <h1>RE<br>KLA<br>MA</h1>
+    </aside>
+    <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <!-- ☲☲☲☲ MAIN CONTENT ☲☲☲☲ -->
+    <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <div class="main-content">
+        <!-- ☲☲☲☲ FILTER ☲☲☲☲ -->
+        <div class="filter">
+            <!-- ☲☲☲☲ MAIN MENU BUTTON ☲☲☲☲ -->
+            <div class="filter-button main-menu-button" onclick="openMainMenu()">
+                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 5h18"></path>
+                    <path d="M3 12h18"></path>
+                    <path d="M3 19h18"></path>
+                </svg>
+                <p>Hlavní menu</p>
+            </div>
+            <!-- ☲☲☲☲ MAIN MENU ☲☲☲☲ -->
+            <div class="filter-menu main-menu" id="main-menu">
+                <ul>
+                    <li><a href="#">Spotřebiče</a></li>
+                    <ul>
+                        <li><a href="#">Vestavné trouby</a></li>
+                        <li><a href="#">Vestavné spotřebiče</a></li>
+                        <li><a href="#">Vestavné myčky nádobí plně integrované</a></li>
+                        <li><a href="#">Indukční varné desky</a></li>
+                        <li><a href="#">Praní a sušení</a></li>
+                    </ul>
+                    <li><a href="#">Výroba kuchyní</a></li>
+                    <ul>
+                        <li><a href="#">Reference</a></li>
+                        <li><a href="#">Vizualizace</a></li>
+                        <li><a href="#">Cenové příklady</a></li>
+                    </ul>
+                    <li><a href="#">Kurzy vaření</a></li>
+                    <ul>
+                        <li><a href="#">Aktuální kurzy vaření</a></li>
+                    </ul>
+                    <li><a href="#">Kuchyňská studia</a></li>
+                    <ul>
+                        <li><a href="#">Studio Praha 9 - Prosek</a></li>
+                        <li><a href="#">Studio Praha 9 - Prosek</a></li>
+                        <li><a href="#">Studio, Praha Jahodnice</a></li>
+                        <li><a href="#">Na sadech Č.Budějovice</a></li>
+                        <li><a href="#">Nám. P.O. Č. Budějovice</a></li>
+                        <li><a href="#">Studio Bratislava</a></li>
+                    </ul>
+                    <li><a href="#">Kontakt</a></li>
+                    <ul>
+                        <li><a href="#">Kuchyně na míru</a></li>
+                        <li><a href="#">Online 7 dní v týdnu</a></li>
+                    </ul>
+                </ul>
+            </div>
 
 
+            <!-- ☲☲☲☲ CATEGORY BUTTON ☲☲☲☲ -->
+            <div class="filter-button category-menu-button" onclick="openCategoryMenu()">
+                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 5h18"></path>
+                    <path d="M3 12h18"></path>
+                    <path d="M3 19h18"></path>
+                </svg>
+                <p>Kategorie</p>
+            </div>
+            <!-- ☲☲☲☲ CATEGORY MENU ☲☲☲☲ -->
+            <div class="filter-menu category-menu" id="category-menu">
+                <div class="category-link"><a href="#">Vestavné spotřebiče</a></div>
+                <div class="category-link"><a href="#">Volně stojící spotřebiče</a></div>
+                <div class="category-link"><a href="#">Odsavače par - digestoře</a></div>
+                <div class="category-link"><a href="#">Dřezy a baterie</a></div>
+                <div class="category-link"><a href="#">Sety spotřebičů</a></div>
+                <div class="category-link"><a href="#">Nádobí do kuchyně</a></div>
+                <div class="category-link"><a href="#">Malé domácí spotřebiče</a></div>
+                <div class="category-link"><a href="#">Zboží s poškozeným obalem</a></div>
+                <div class="category-link"><a href="#">Chytré spotřebiče</a></div>
+                <div class="category-link" style="border:none"><a href="#">Vouchery</a></div>
+
+            </div>
+
+            <!-- ☲☲☲☲ PARAMETERS BUTTON ☲☲☲☲ -->
+            <div class="filter-button parameters-menu-button" onclick="openParametersMenu()">
+                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 5h18"></path>
+                    <path d="M3 12h18"></path>
+                    <path d="M3 19h18"></path>
+                </svg>
+                <p>Parametry</p>
+            </div>
+            <!-- ☲☲☲☲ PARAMETERS MENU ☲☲☲☲ -->
+            <div class="filter-menu parameters-menu active showed" id="parameters-menu">
+                <form action="" class="parameters-form">
+                    <p class="prefer-title">Značka</p>
+                    <div class="prefer">
+                        <div class="part">
+                            <label class="form-control">
+                                <input type="checkbox" id="schuler" name="schuller" value="schuller">
+                                AEG
+                            </label><br>
+
+                            <label class="form-control">
+                                <input type="checkbox" id="next125" name="next125" value="next125">
+                                BOSCH
+                            </label><br>
+
+                            <label class="form-control">
+                                <input type="checkbox" id="lightstyle" name="lightstyle" value="lightstyle">
+                                ELECTROLUX
+                            </label><br>
+                            <label class="form-control">
+                                <input type="checkbox" id="nobila" name="nobila" value="nobila">
+                                FRANKE
+                            </label><br>
+                            <label class="form-control">
+                                <input type="checkbox" id="pino" name="pino" value="pino">
+                                MIELE
+                            </label><br>
+                            <label class="form-control">
+                                <input type="checkbox" id="nobila" name="nobila" value="nobila">
+                                SIEMENS
+                            </label><br>
+                            <label class="form-control">
+                                <input type="checkbox" id="pino" name="pino" value="pino">
+                                TEKA
+                            </label><br>
+                        </div>
+                    </div>
+                </form>
+                <div class="line"></div>
+                <p class="cena">Cena</p>
+                <ul class="prices">
+                    <li><a href="#">Do 11 990 Kč</a></li>
+                    <li><a href="#">11 990 Kč - 15 990 Kč</a></li>
+                    <li><a href="#">15 990 Kč - 19 990 Kč</a></li>
+                    <li><a href="#">19 990 Kč - 25 990 Kč</a></li>
+                    <li><a href="#">Nad 25 990 Kč</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <!-- ☲☲☲☲ PRODUCT ☲☲☲☲ -->
+        <div class="product">
+            <h1>PRODUCT</h1>
+        </div>
+    </div>
+    <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <!-- ☲☲☲☲ AD BOX ☲☲☲☲ -->
+    <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
+    <aside class="ad-box" id="ad-box-2">
+        <h1>RE<br>KLA<br>MA</h1>
+    </aside>
+</main>
+<script>
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    // ☲☲☲☲☲ OPEN/CLOSE FILTER - MAIN MENU ☲☲☲☲☲
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    function openMainMenu(){
+        var mainMenu = document.getElementById("main-menu")
+        if (mainMenu.classList.contains("active")){
+            mainMenu.classList.remove("active")
+            setTimeout(() => {
+                mainMenu.classList.remove("showed")
+            }, 400);
+        }else{
+            mainMenu.classList.add("showed")
+            setTimeout(() => {
+                mainMenu.classList.add("active")
+            }, 10);
+        }
+        
+    }
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    // ☲☲☲☲☲ OPEN/CLOSE FILTER - CATEGORY MENU ☲☲☲☲☲
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    function openCategoryMenu(){
+        var categoryMenu = document.getElementById("category-menu")
+        if (categoryMenu.classList.contains("active")){
+            categoryMenu.classList.remove("active")
+            setTimeout(() => {
+                categoryMenu.classList.remove("showed")
+            }, 400);
+        }else{
+            categoryMenu.classList.add("showed")
+            setTimeout(() => {
+                categoryMenu.classList.add("active")
+            }, 10);
+        }
+        
+    }
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    // ☲☲☲☲☲ OPEN/CLOSE FILTER - PARAMETERS MENU ☲☲☲☲☲
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    function openParametersMenu(){
+        var parametersMenu = document.getElementById("parameters-menu")
+        if (parametersMenu.classList.contains("active")){
+            parametersMenu.classList.remove("active")
+            setTimeout(() => {
+                parametersMenu.classList.remove("showed")
+            }, 400);
+        }else{
+            parametersMenu.classList.add("showed")
+            setTimeout(() => {
+                parametersMenu.classList.add("active")
+            }, 10);
+        }
+        
+    }
+</script>
 
 </body>
 </html>
