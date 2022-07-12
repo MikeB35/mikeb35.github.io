@@ -542,8 +542,124 @@ body main .main-content .filter .filter-menu.parameters-menu .prices li a {
   text-decoration: none;
   color: #555555;
 }
+body main .main-content .filter .filter-menu.parameters-menu ::-moz-selection {
+  color: #fff;
+  background: #fc5900;
+}
+body main .main-content .filter .filter-menu.parameters-menu ::selection {
+  color: #fff;
+  background: #fc5900;
+}
+body main .main-content .filter .filter-menu.parameters-menu .wrapper {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 10px 10px;
+}
+body main .main-content .filter .filter-menu.parameters-menu header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+body main .main-content .filter .filter-menu.parameters-menu header p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+body main .main-content .filter .filter-menu.parameters-menu .price-input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 35px;
+}
+body main .main-content .filter .filter-menu.parameters-menu .price-input .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .main-content .filter .filter-menu.parameters-menu .field input {
+  position: relative;
+  top: -1rem;
+  width: 100%;
+  height: 70%;
+  outline: none;
+  font-size: .9rem;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+body main .main-content .filter .filter-menu.parameters-menu input[type="number"]::-webkit-outer-spin-button,
+body main .main-content .filter .filter-menu.parameters-menu input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body main .main-content .filter .filter-menu.parameters-menu .price-input .separator {
+  position: relative;
+  top: -1.1rem;
+  width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 19px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .main-content .filter .filter-menu.parameters-menu .slider {
+  height: 5px;
+  position: relative;
+  background: #b1b1b1;
+  border-radius: 5px;
+}
+body main .main-content .filter .filter-menu.parameters-menu .slider .progress {
+  height: 100%;
+  left: 0%;
+  right: 90%;
+  position: absolute;
+  border-radius: 5px;
+  background: #fc5900;
+}
+body main .main-content .filter .filter-menu.parameters-menu .range-input {
+  position: relative;
+}
+body main .main-content .filter .filter-menu.parameters-menu .range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+body main .main-content .filter .filter-menu.parameters-menu input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #fc5900;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+body main .main-content .filter .filter-menu.parameters-menu input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #17A2B8;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.288);
+}
 body main .main-content .filter .filter-menu.parameters-menu.active {
-  height: 25rem;
+  height: 31rem;
 }
 body main .main-content .filter .filter-menu.parameters-menu.showed {
   display: block;
@@ -551,13 +667,276 @@ body main .main-content .filter .filter-menu.parameters-menu.showed {
 body main .main-content .product {
   width: 100%;
   height: 80vh;
-  background: linear-gradient(300deg, #00ffff, #72aaff, #1d2252);
   padding: 0 1rem;
 }
-body main .main-content .product h1 {
+body main .main-content .product .path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+body main .main-content .product .path .home svg {
+  fill: #3b3b3b;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: -2px;
+}
+body main .main-content .product .path .arrow {
+  stroke: #8b8b8b;
+  width: 1rem;
+  height: 1rem;
+}
+body main .main-content .product .path a {
+  color: #3b3b3b;
+  font-size: .8rem;
+  margin: 0;
+  text-decoration: none;
+}
+body main .main-content .product .columns .column .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body main .main-content .product .columns .column .heading .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 1rem;
+}
+body main .main-content .product .columns .column .heading .head h1 {
+  font-family: Outfit;
+  font-weight: 200;
+  font-size: 1.7rem;
+}
+body main .main-content .product .columns .column .heading .head .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .main-content .product .columns .column .heading p {
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+body main .main-content .product .columns .column .heading a {
+  padding: 6px 12px;
+  background-color: #2388d6;
   color: white;
-  font-family: "Outfit";
-  font-size: 5rem;
-  font-weight: 700;
-  text-shadow: 0px 2px 10px rgba(231, 231, 231, 0.2), 0px 4px 20px rgba(231, 231, 231, 0.3);
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: .9rem;
+}
+body main .main-content .product .columns .column .images {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+body main .main-content .product .columns .column .images .main-image {
+  width: 50%;
+}
+body main .main-content .product .columns .column .images .zaruka {
+  width: 100px;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+}
+body main .main-content .product .columns .column .images .other-images {
+  width: 50%;
+}
+body main .main-content .product .hidden-carousel {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(32, 32, 32, 0.5);
+  padding: 5rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 {
+  width: 65%;
+  height: 100%;
+  background-color: white;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper {
+  height: 100%;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide1 {
+  background: url("images/Bosch SGV4HVX33E.jpg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide2 {
+  background: url("images/Bosch SGV4HVX33E-2.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide3 {
+  background: url("images/Bosch SGV4HVX33E-3.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide4 {
+  background: url("images/Bosch SGV4HVX33E-4.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide5 {
+  background: url("images/Bosch SGV4HVX33E-5.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide6 {
+  background: url("images/Bosch SGV4HVX33E-6.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide7 {
+  background: url("images/Bosch SGV4HVX33E-7.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide8 {
+  background: url("images/Bosch SGV4HVX33E-8.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide9 {
+  background: url("images/Bosch SGV4HVX33E-9.jpg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-1 .swiper .swiper-wrapper .swiper-slide#slide10 {
+  background: url("images/Bosch SGV4HVX33E-10.jpg");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main .main-content .product .hidden-carousel .carousel-part-2 {
+  background-color: #f7eee3;
+  height: 100%;
+  width: 100%;
+}
+body main .main-content .product .hidden-carousel .carousel-part-2 .swiper {
+  width: 100%;
+  height: 40%;
+  margin: 0;
+  overflow: visible;
+  padding: 3rem;
+}
+body main .main-content .product .hidden-carousel .carousel-part-2 .swiper .swiper-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body main .main-content .product .hidden-carousel .carousel-part-2 .swiper .swiper-wrapper .swiper-slide {
+  min-width: 8rem;
+  height: 5rem;
+}
+body main .main-content .product .hidden-carousel .carousel-part-2 .swiper .close {
+  position: absolute;
+  cursor: pointer;
+  right: 1rem;
+  top: 1rem;
+}
+body main .main-content .product .hidden-carousel .swiper {
+  width: 100%;
+  height: 100%;
+}
+body main .main-content .product .hidden-carousel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+body main .main-content .product .hidden-carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .main-content .product .hidden-carousel body {
+  background: #000;
+  color: #000;
+}
+body main .main-content .product .hidden-carousel .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main .main-content .product .hidden-carousel .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+body main .main-content .product .hidden-carousel .mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+body main .main-content .product .hidden-carousel .mySwiper {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+body main .main-content .product .hidden-carousel .mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+body main .main-content .product .hidden-carousel .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+body main .main-content .product .hidden-carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .main-content .product .hidden-carousel.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

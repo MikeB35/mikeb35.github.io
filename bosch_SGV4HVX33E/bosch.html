@@ -276,15 +276,184 @@
                     <li><a href="#">19 990 Kč - 25 990 Kč</a></li>
                     <li><a href="#">Nad 25 990 Kč</a></li>
                 </ul>
+                <div class="wrapper">
+                    <!-- <header>
+                      <h2>Price Range</h2>
+                      <p>Use slider or enter min and max price</p>
+                    </header> -->
+                    
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="9290" max="92443" value="9290" step="100">
+                      <input type="range" class="range-max" min="9291" max="92444" value="15990" step="100">
+                    </div>
+                    <div class="price-input">
+                        <div class="field">
+                          <!-- <span>Min</span> -->
+                          <input type="number" class="input-min" value="9290">
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                          <!-- <span>Max</span> -->
+                          <input type="number" class="input-max" value="15990">
+                        </div>
+                      </div>
+                  </div>
             </div>
 
         </div>
         
         <!-- ☲☲☲☲ PRODUCT ☲☲☲☲ -->
         <div class="product">
-            <h1>PRODUCT</h1>
+            <div class="path">
+                <a href="#" class="home"><svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 14h-4v7h4v-7Z"></path>
+                    <path d="m20.42 10.184-7.71-7.88a.999.999 0 0 0-1.42 0l-7.71 7.89a2 2 0 0 0-.58 1.43v8.38a2 2 0 0 0 1.89 2H8v-9a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v9h3.11a2 2 0 0 0 1.89-2v-8.38a2.07 2.07 0 0 0-.58-1.44Z"></path>
+                  </svg></a>
+                  <svg class="arrow" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 6 6 6-6 6"></path>
+                  </svg>
+                  <a href="#">Vestavné spotřebiče</a>
+                  <svg class="arrow" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 6 6 6-6 6"></path>
+                  </svg>
+                  <a href="#">Myčky nádobí</a>
+                  <svg class="arrow" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 6 6 6-6 6"></path>
+                  </svg>
+                  <a href="#">Plně integrované vestavné myčky </a>
+                  <svg class="arrow" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 6 6 6-6 6"></path>
+                  </svg>
+                  <a href="#">Plně integrované vestavné myčky 60cm</a>
+                  <svg class="arrow" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 6 6 6-6 6"></path>
+                  </svg>
+                  <a href="#">Bosch SGV4HVX33E</a>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="heading">
+                        <div class="head">
+                            <h1>Serie | 4 Bosch SGV4HVX33E</h1>
+                            <div class="stars">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                                <img src="images/star.png">
+                            </div>
+                            
+                        </div>
+                        <p>integrovaná vestavná myčka</p>
+                        <a href="#">DOPRAVA ZDARMA</a>
+                    </div>
+                    <div class="images" onclick="openCloseCarousel()">
+                        <img class="main-image" src="images/Bosch SGV4HVX33E.jpg" alt="">
+                        <img class="zaruka" src="images/zaruka.png" alt="">
+                        <img class="other-images" src="images/other_Images.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-carousel" id="hidden-carousel">
+                <div class="carousel-part-1">
+                    <div style="--swiper-navigation-color: #3b3b3b; --swiper-pagination-color: #fff"
+                    class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="slide1"></div>
+                            <div class="swiper-slide" id="slide2"></div>
+                            <div class="swiper-slide" id="slide3"></div>
+                            <div class="swiper-slide" id="slide4"></div>
+                            <div class="swiper-slide" id="slide5"></div>
+                            <div class="swiper-slide" id="slide6"></div>
+                            <div class="swiper-slide" id="slide7"></div>
+                            <div class="swiper-slide" id="slide8"></div>
+                            <div class="swiper-slide" id="slide9"></div>
+                            <div class="swiper-slide" id="slide10"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="carousel-part-2">
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="description">
+                            <h1>Bosch SGV4HVX33E</h1>
+                            <p>Naše cena s DPH a PHE: 13 999 Kč</p>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/Bosch SGV4HVX33E-10.jpg" />
+                            </div>
+                        </div>
+                        <div class="close" onclick="openCloseCarousel()">
+                            <svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m13.41 11.996 4.3-4.29a1.004 1.004 0 1 0-1.42-1.42l-4.29 4.3-4.29-4.3a1.004 1.004 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a.999.999 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1.001 1.001 0 0 0 1.639-.325 1 1 0 0 0-.22-1.095l-4.3-4.29Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 10,
+                    slidesPerView: 10,
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                });
+                var swiper2 = new Swiper(".mySwiper2", {
+                    effect: 'fade',
+                    fadeEffect: {
+                        crossFade: true
+                    },
+                    navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+                    thumbs: {
+                    swiper: swiper,
+                    },
+                });
+                </script>
+            </div>
+            <!-- <h1>PRODUCT</h1> -->
         </div>
     </div>
+    
     <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
     <!-- ☲☲☲☲ AD BOX ☲☲☲☲ -->
     <!-- ☲☲☲☲☲☲☲☲☲☲☲☲☲ -->
@@ -344,6 +513,60 @@
             setTimeout(() => {
                 parametersMenu.classList.add("active")
             }, 10);
+        }
+        
+    }
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    // ☲☲☲☲☲ PRICE RANGE ☲☲☲☲☲
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+
+    const rangeInput = document.querySelectorAll(".range-input input"),
+    priceInput = document.querySelectorAll(".price-input input"),
+    range = document.querySelector(".slider .progress");
+    let priceGap = 1000;
+    priceInput.forEach(input =>{
+        input.addEventListener("input", e =>{
+            let minPrice = parseInt(priceInput[0].value),
+            maxPrice = parseInt(priceInput[1].value);
+            
+            if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
+                if(e.target.className === "input-min"){
+                    rangeInput[0].value = minPrice;
+                    range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+                }else{
+                    rangeInput[1].value = maxPrice;
+                    range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                }
+            }
+        });
+    });
+    rangeInput.forEach(input =>{
+        input.addEventListener("input", e =>{
+            let minVal = parseInt(rangeInput[0].value),
+            maxVal = parseInt(rangeInput[1].value);
+            if((maxVal - minVal) < priceGap){
+                if(e.target.className === "range-min"){
+                    rangeInput[0].value = maxVal - priceGap
+                }else{
+                    rangeInput[1].value = minVal + priceGap;
+                }
+            }else{
+                priceInput[0].value = minVal;
+                priceInput[1].value = maxVal;
+                range.style.left = ((minVal / rangeInput[0].max) * 100 - 5) + "%";
+                range.style.right = 105 - (maxVal / rangeInput[1].max) * 100 + "%";
+            }
+        });
+    });
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    // ☲☲☲☲☲ OPEN/CLOSE CAROUSEL - PARAMETERS MENU ☲☲☲☲☲
+    // ☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲☲
+    function openCloseCarousel(){
+        var carousel = document.getElementById("hidden-carousel")
+        if (carousel.classList.contains("active")){
+            carousel.classList.remove("active");
+        }else{
+            carousel.classList.add("active")
         }
         
     }
